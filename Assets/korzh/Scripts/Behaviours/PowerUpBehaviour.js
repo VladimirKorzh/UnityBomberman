@@ -2,41 +2,52 @@
 //@script RequireComponent(AudioSource)
 
 var materials : Material[];
-var type : String;
+
 var pickupSound : AudioClip[];
 var soundToPlay : AudioClip;
+
+enum POWERUP{
+	Speed = 0,
+	Fire  = 1,
+	Bomb  = 2
+}
+var type : int;
+
 function Start () {
     if (materials.Length == 0) // do nothing if no materials
         return;
+       
     soundToPlay = pickupSound[0];    
-        
-	if (Random.value > 0.5){
-		renderer.sharedMaterial = materials[0];
-		type = "SpeedBuff";
+    transform.localPosition.y -= 0.3;
+	var rnd = Random.value; 
+	if (rnd < 0.3){
+		renderer.sharedMaterial = materials[POWERUP.Speed];
+		type = POWERUP.Speed;
 	}
-	else{
-		renderer.sharedMaterial = materials[1];
-		type = "FireLength";
+	else if (rnd < 0.6){
+		renderer.sharedMaterial = materials[POWERUP.Fire];
+		type = POWERUP.Fire;
+	}
+	else {
+		renderer.sharedMaterial = materials[POWERUP.Bomb];
+		type = POWERUP.Bomb;	
 	}
 }
 
 function Update () {
-	transform.RotateAroundLocal(Vector3(1,0,1),Time.deltaTime);
+	transform.RotateAroundLocal(Vector3(1,0,1),Time.deltaTime*5);
 }
 
 function OnTriggerEnter (other : Collider) {
 
 	var playerObject = GameObject.Find("Player");
 
-	if (type == "SpeedBuff"){
-		playerObject.GetComponent(UserInterface).buffSpeedBuff();
-	}
-	if(type=="FireLength"){
-		playerObject.GetComponent(UserInterface).buffFireLength();
-	}
+	switch(type) {
+		case POWERUP.Speed: playerObject.GetComponent(UserInterface).buffSpeedBuff();  break;
+		case POWERUP.Fire:  playerObject.GetComponent(UserInterface).buffFireLength(); break;
+		case POWERUP.Bomb:  playerObject.GetComponent(UserInterface).buffBombs(); break;
+		}
 	
-	Debug.Log("S:"+playerObject.GetComponent(UserInterface).getSpeedBuff() + " F: " + playerObject.GetComponent(UserInterface).getFireLength());
-	GetComponent(MeshRenderer).enabled = false;
 	AudioSource.PlayClipAtPoint(soundToPlay, transform.position);
 	Destroy(gameObject);
 }

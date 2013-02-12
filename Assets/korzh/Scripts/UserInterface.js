@@ -3,17 +3,18 @@
 //static var BombCount  : int = 1;
 //static var FireLength : int = 1;
 //static var SpeedBuff  : int = 2;
-
-var BombCount  : int;
 var FireLength : int;
 var SpeedBuff  : int;
+var currmaxBombCount : int;
+var maxBombCount = 5;
 
-private var maxBombCount = 5;
-private var maxFireLength = 7;
-private var maxSpeedBuff = 7;
+var maxFireLength = 7;
+var maxSpeedBuff = 7;
 
 var WoodenBlock : GameObject;
 var Bomb  : GameObject;
+
+var BombsList: Array = Array();
 
 
 
@@ -27,7 +28,9 @@ function Update () {
 	if (Input.GetKeyDown(KeyCode.Escape)){
 		Screen.lockCursor = !Screen.lockCursor;
 	}	
-	
+//	if (Input.GetKeyDown(KeyCode.Q)){
+//		Debug.Log(BombsList.Count);
+//	}
 	
     if (Input.GetButtonDown("Fire1") || Input.GetButtonDown("Fire2") || Input.GetKeyDown(KeyCode.LeftShift)){
 		if (Physics.Raycast(transform.position, transform.forward, hit)){
@@ -45,9 +48,10 @@ function PlaceBlock(hit : RaycastHit){
     }
 }	
 function PlaceBomb(hit : RaycastHit){
-	if (hit.collider.tag != "Bomb"){
+	if (hit.collider.tag != "Bomb" && hit.collider.tag != "PowerUp" && BombsList.Count < currmaxBombCount){
 	    var newpos = hit.normal + hit.transform.position;
-	    Instantiate(Bomb, newpos, Quaternion.identity);
+	    var boom = Instantiate(Bomb, newpos, Quaternion.identity);
+	    BombsList.Add( boom );
     }
 }	
 function DestroyBlock(hit : RaycastHit){
@@ -58,7 +62,7 @@ function DestroyBlock(hit : RaycastHit){
 
 
 function buffBombs(){
-	if (BombCount < maxBombCount) BombCount+=1;	
+	if (currmaxBombCount < maxBombCount) currmaxBombCount+=1;	
 }
 
 function buffFireLength(){
@@ -74,4 +78,10 @@ function getFireLength(){
 }
 function getSpeedBuff(){
 	return SpeedBuff;
+}
+function getBombCountCurrent(){
+	return BombsList.Count;
+}
+function getBombCount(){
+	return currmaxBombCount;
 }
