@@ -3,6 +3,7 @@
 //static var BombCount  : int = 1;
 //static var FireLength : int = 1;
 //static var SpeedBuff  : int = 2;
+
 var FireLength : int;
 var SpeedBuff  : int;
 var currmaxBombCount : int;
@@ -28,38 +29,31 @@ function Update () {
 	if (Input.GetKeyDown(KeyCode.Escape)){
 		Screen.lockCursor = !Screen.lockCursor;
 	}	
-//	if (Input.GetKeyDown(KeyCode.Q)){
-//		Debug.Log(BombsList.Count);
-//	}
-	
-    if (Input.GetButtonDown("Fire1") || Input.GetButtonDown("Fire2") || Input.GetKeyDown(KeyCode.LeftShift)){
-		if (Physics.Raycast(transform.position, transform.forward, hit)){
-			if (Input.GetButtonDown("Fire1")) PlaceBlock(hit);
-			else if (Input.GetButtonDown("Fire2")) DestroyBlock(hit);
-			else if (Input.GetKeyDown(KeyCode.LeftShift)) PlaceBomb(hit);
-		}
-    }    
-}
-
-function PlaceBlock(hit : RaycastHit){
-	if (hit.collider.tag == "WoodBlock"){	    
-	    var newpos = hit.normal + hit.transform.position;
-	    Instantiate (WoodenBlock, newpos, Quaternion.identity);
-    }
-}	
-function PlaceBomb(hit : RaycastHit){
-	if (hit.collider.tag != "Bomb" && hit.collider.tag != "PowerUp" && BombsList.Count < currmaxBombCount){
-	    var newpos = hit.normal + hit.transform.position;
-	    var boom = Instantiate(Bomb, newpos, Quaternion.identity);
-	    BombsList.Add( boom );
-    }
-}	
-function DestroyBlock(hit : RaycastHit){
-	if (hit.collider.tag == "WoodBlock") {
-		Destroy(hit.collider.gameObject);
+	if(networkView.isMine){
+		if (Input.GetKeyDown(KeyCode.LeftShift)) PlaceBomb(hit);
 	}
 }
 
+
+function PlaceBomb(hit : RaycastHit){
+	if (BombsList.Count < currmaxBombCount){
+	    var newpos = transform.position;
+	    var boom = Network.Instantiate(Bomb, newpos, Quaternion.identity,1);
+	    boom.GetComponent(BombBehaviour).LinkPlayer(gameObject);
+	    BombsList.Add( boom );	    
+    }
+}	
+//function DestroyBlock(hit : RaycastHit){
+//	if (hit.collider.tag == "WoodBlock") {
+//		Destroy(hit.collider.gameObject);
+//	}
+//}
+//function PlaceBlock(hit : RaycastHit){
+//	if (hit.collider.tag == "WoodBlock"){	    
+//	    var newpos = hit.normal + hit.transform.position;
+//	    Instantiate (WoodenBlock, newpos, Quaternion.identity);
+//    }
+//}	
 
 function buffBombs(){
 	if (currmaxBombCount < maxBombCount) currmaxBombCount+=1;	

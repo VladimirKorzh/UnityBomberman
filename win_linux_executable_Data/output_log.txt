@@ -17,184 +17,1024 @@ Platform assembly: C:\Users\Vladimir\Documents\UnityBomberman\win_linux_executab
 Loading C:\Users\Vladimir\Documents\UnityBomberman\win_linux_executable_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
 Platform assembly: C:\Users\Vladimir\Documents\UnityBomberman\win_linux_executable_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
 Loading C:\Users\Vladimir\Documents\UnityBomberman\win_linux_executable_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
-- Completed reload, in  0.495 seconds
+Platform assembly: C:\Users\Vladimir\Documents\UnityBomberman\win_linux_executable_Data\Managed\C5.dll (this message is harmless)
+Loading C:\Users\Vladimir\Documents\UnityBomberman\win_linux_executable_Data\Managed\C5.dll into Unity Child Domain
+- Completed reload, in  0.071 seconds
 desktop: 1366x768 60Hz; virtual: 2732x768 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
+Platform assembly: C:\Users\Vladimir\Documents\UnityBomberman\win_linux_executable_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Vladimir\Documents\UnityBomberman\win_linux_executable_Data\Managed\UnityScript.Lang.dll (this message is harmless)
 Platform assembly: C:\Users\Vladimir\Documents\UnityBomberman\win_linux_executable_Data\Managed\Boo.Lang.dll (this message is harmless)
-FireLength: 1
+Initialize engine version: 4.0.0f7
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 9.0c [nvumdshim.dll 9.18.13.1090]
+    Renderer: NVIDIA GeForce GT 540M
+    Vendor:   NVIDIA
+    VRAM:     978 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 DF24=0 INTZ=1 RAWZ=0 NULL=1 RESZ=0 SlowINTZ=0
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Vladimir\Documents\UnityBomberman\win_linux_executable_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Vladimir\Documents\UnityBomberman\win_linux_executable_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Vladimir\Documents\UnityBomberman\win_linux_executable_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Vladimir\Documents\UnityBomberman\win_linux_executable_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Vladimir\Documents\UnityBomberman\win_linux_executable_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Vladimir\Documents\UnityBomberman\win_linux_executable_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Vladimir\Documents\UnityBomberman\win_linux_executable_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
+Loading C:\Users\Vladimir\Documents\UnityBomberman\win_linux_executable_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Vladimir\Documents\UnityBomberman\win_linux_executable_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading C:\Users\Vladimir\Documents\UnityBomberman\win_linux_executable_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+Platform assembly: C:\Users\Vladimir\Documents\UnityBomberman\win_linux_executable_Data\Managed\C5.dll (this message is harmless)
+Loading C:\Users\Vladimir\Documents\UnityBomberman\win_linux_executable_Data\Managed\C5.dll into Unity Child Domain
+- Completed reload, in  0.065 seconds
+desktop: 1366x768 60Hz; virtual: 2732x768 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+Platform assembly: C:\Users\Vladimir\Documents\UnityBomberman\win_linux_executable_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Vladimir\Documents\UnityBomberman\win_linux_executable_Data\Managed\UnityScript.Lang.dll (this message is harmless)
+Platform assembly: C:\Users\Vladimir\Documents\UnityBomberman\win_linux_executable_Data\Managed\Boo.Lang.dll (this message is harmless)
+Server Initialized
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:44)
-BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:27)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:16)
+NetworkManager:OnServerInitialized() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\NetworkManager.js:35)
+UnityEngine.Network:InitializeServer(Int32, Int32, Boolean)
+NetworkManager:startServer() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\NetworkManager.js:27)
+GuiManager:CreateNewServerScreen() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\GuiManager.js:78)
+GuiManager:OnGUI() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\GuiManager.js:102)
  
 (Filename: C Line: 0)
 
-FireLength: 1
+Registered on Master Server
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:44)
-BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:28)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:16)
+NetworkManager:OnMasterServerEvent(MasterServerEvent) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\NetworkManager.js:71)
  
 (Filename: C Line: 0)
 
-FireLength: 1
+Refreshing hostlist: TestBomberMan
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:44)
-BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:29)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:16)
+GuiManager:MainMenuScreen() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\GuiManager.js:36)
+GuiManager:OnGUI() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\GuiManager.js:99)
  
 (Filename: C Line: 0)
 
-FireLength: 1
+Servers found: 1
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:44)
-BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:30)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:16)
+GuiManager:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\GuiManager.js:119)
  
 (Filename: C Line: 0)
 
-FireLength: 1
+Player connected
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:44)
-BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:31)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:16)
+NetworkManager:OnPlayerConnected() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\NetworkManager.js:40)
  
 (Filename: C Line: 0)
 
-FireLength: 1
+NullReferenceException: Object reference not set to an instance of an object
+  at BombBehaviour.Explode () [0x00012] in C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:28 
+  at BombBehaviour.Update () [0x00026] in C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:17 
+ 
+(Filename: C Line: 0)
+
+empty space
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:44)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:55)
 BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:32)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:16)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:17)
  
 (Filename: C Line: 0)
 
-FireLength: 1
+empty space
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:44)
-BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:27)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:16)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:55)
+BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:34)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:17)
  
 (Filename: C Line: 0)
 
-FireLength: 1
+empty space
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:44)
-BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:28)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:16)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:55)
+BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:35)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:17)
  
 (Filename: C Line: 0)
 
-FireLength: 1
+View ID AllocatedID: 51 not found during lookup. Strange behaviour may occur
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 1678)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 51' could not be located.
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 2460)
+
+View ID AllocatedID: 51 not found during lookup. Strange behaviour may occur
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 1678)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 51' could not be located.
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 2460)
+
+Registered on Master Server
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:44)
-BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:29)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:16)
+NetworkManager:OnMasterServerEvent(MasterServerEvent) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\NetworkManager.js:71)
  
 (Filename: C Line: 0)
 
-FireLength: 1
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:44)
-BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:30)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:16)
+View ID AllocatedID: 52 not found during lookup. Strange behaviour may occur
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 1678)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 52' could not be located.
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 2460)
+
+View ID AllocatedID: 52 not found during lookup. Strange behaviour may occur
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 1678)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 52' could not be located.
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 2460)
+
+View ID AllocatedID: 53 not found during lookup. Strange behaviour may occur
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 1678)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 53' could not be located.
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 2460)
+
+View ID AllocatedID: 53 not found during lookup. Strange behaviour may occur
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 1678)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 53' could not be located.
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 2460)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at BombBehaviour.Explode () [0x00012] in C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:28 
+  at BombBehaviour.Update () [0x00026] in C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:17 
  
 (Filename: C Line: 0)
 
-FireLength: 1
+empty space
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:44)
-BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:31)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:16)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:55)
+BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:34)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:17)
  
 (Filename: C Line: 0)
 
-FireLength: 1
+empty space
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:44)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:55)
+BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:34)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:17)
+ 
+(Filename: C Line: 0)
+
+empty space
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:55)
+BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:34)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:17)
+ 
+(Filename: C Line: 0)
+
+empty space
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:55)
+BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:35)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:17)
+ 
+(Filename: C Line: 0)
+
+empty space
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:55)
+BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:35)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:17)
+ 
+(Filename: C Line: 0)
+
+empty space
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:55)
+BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:35)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:17)
+ 
+(Filename: C Line: V)
+
+iew ID AllocatedID: 54 not found during lookup. Strange behaviour may occur
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 1678)
+
+Could't invoke RPC function 'RPCDestroyBlock' because the networkView 'AllocatedID: 54' doesn't exist
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 2471)
+
+View ID AllocatedID: 54 not found during lookup. Strange behaviour may occur
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 1678)
+
+Could't invoke RPC function 'RPCDestroyBlock' because the networkView 'AllocatedID: 54' doesn't exist
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 2471)
+
+View ID AllocatedID: 54 not found during lookup. Strange behaviour may occur
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 1678)
+
+Could't invoke RPC function 'RPCSpawnFire' because the networkView 'AllocatedID: 54' doesn't exist
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 2471)
+
+View ID AllocatedID: 54 not found during lookup. Strange behaviour may occur
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 1678)
+
+Could't invoke RPC function 'RPCSpawnFire' because the networkView 'AllocatedID: 54' doesn't exist
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 2471)
+
+View ID AllocatedID: 54 not found during lookup. Strange behaviour may occur
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 1678)
+
+Could't invoke RPC function 'RPCSpawnFire' because the networkView 'AllocatedID: 54' doesn't exist
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 2471)
+
+View ID AllocatedID: 54 not found during lookup. Strange behaviour may occur
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 1678)
+
+Could't invoke RPC function 'RPCSpawnFire' because the networkView 'AllocatedID: 54' doesn't exist
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 2471)
+
+View ID AllocatedID: 54 not found during lookup. Strange behaviour may occur
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 1678)
+
+Could't invoke RPC function 'RPCSpawnFire' because the networkView 'AllocatedID: 54' doesn't exist
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 2471)
+
+View ID AllocatedID: 54 not found during lookup. Strange behaviour may occur
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 1678)
+
+Could't invoke RPC function 'RPCSpawnFire' because the networkView 'AllocatedID: 54' doesn't exist
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 2471)
+
+View ID AllocatedID: 54 not found during lookup. Strange behaviour may occur
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 1678)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 54' could not be located.
+ 
+(Filename: C:/BuildAgeiew ID AlloortkdID: c4 fo50fo9n26d4rfag lRouup.iSmrangetbeoavioNr may occur
+a
+(ger.cpp : Cne: 2460)
+en
+t/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 1678)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 54' could not be located.
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 2460)
+
+View ID AllocatedID: 55 not found during lookup. Strange behaviour may occur
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 1678)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 55' could not be located.
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 2460)
+
+View ID AllocatedID: 55 not found during lookup. Strange behaviour may occur
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 1678)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 55' could not be located.
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 2460)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at BombBehaveoupr.Explode
+ () [0x0001.Debug:I:\Useal_Log(Int32, String, Object)o
+Umberman\Assetbug:Log(Obcript)s
+\Behaviaviour:EbBehodeDir(Vecto8 
+  at BombBeehaviour.ir\Documents0x0nityBomberman\AssetVladorzh\Scripts\BehaviotyBomBombBehavssets\korz)
+BombBehaviour:ExplodB() (aehaviour.js:1ladi
+ ir
+\Docuname: C Line: 0)
+
+man\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:31)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:17)
+ 
+(Filename: C Line: 0)
+
+empty space
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:55)
 BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:32)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:16)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:17)
  
 (Filename: C Line: 0)
 
-S:7 F: 2
+empty space
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
-PowerUpBehaviour:OnTriggerEnter(Collider) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PowerUpBehaviour.js:38)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:55)
+BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:34)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:17)
  
 (Filename: C Line: 0)
 
-FireLength: 2
+empty space
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:44)
-BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:27)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:16)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:55)
+BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:35)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:17)
  
 (Filename: C Line: 0)
 
-FireLength: 2
+empty space
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:44)
-BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:28)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:16)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:55)
+BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:35)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:17)
  
 (Filename: C Line: 0)
 
-FireLength: 2
+empty space
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:44)
-BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:29)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:16)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:55)
+BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:35)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:17)
  
 (Filename: C Line: 0)
 
-FireLength: 2
+View ID AllocatedID: 56 not found during lookup. Strange behaviour may occur
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 1678)
+
+Could't invoke RPC function 'RPCDestroyBlock' because the networkView 'AllocatedID: 56' doesn't exist
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 2471)
+
+View ID AllocatedID: 56 not found during lookup. Strange behaviour may occur
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 1678)
+
+Could't invoke RPC function 'RPCSpawnFire' because the networkView 'AllocatedID: 56' doesn't exist
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 2471)
+
+View ID AllocatedID: 56 not found during lookup. Strange behaviour may occur
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 1678)
+
+Could't invoke RPC function 'RPCSpawnFire' because the networkView 'AllocatedID: 56' doesn't exist
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 2471)
+
+View ID AllocatedID: 56 not found during lookup. Strange behaviour may occur
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 1678)
+
+Could't invoke RPC function 'RPCDestroyBlock' because the networkView 'AllocatedID: 56' doesn't exist
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 2471)
+
+View ID AllocatedID: 56 not found during lookup. Strange behaviour may occur
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 1678)
+
+Could't invoke RPC function 'RPCDestroyBlock' because the networkView 'AllocatedID: 56' doesn't exist
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 2471)
+
+View ID AllocatedID: 56 not found during lookup. Strange behaviour may occur
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 1678)
+
+Could't invoke RPC function 'RPCSpawnFire' because the networkView 'AllocatedID: 56' doesn't exist
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 2471)
+
+View ID AllocatedID: 56 not found during lookup. Strange behaviour may occur
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 1678)
+
+Could't invoke RPC function 'RPCDestroyBlock' because the networkView 'AllocatedID: 56' doesn't exist
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 2471)
+
+View ID AllocatedID: 56 not found during lookup. Strange behaviour may occur
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 1678)
+
+Could't invoke RPC function 'RPCSpawnFire' because the networkView 'AllocatedID: 56' doesn't exist
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 2471)
+
+View ID AllocatedID: 56 not found during lookup. Strange behaviour may occur
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 1678)
+
+Could't invoke RPC function 'RPCSpawnFire' because the networkView 'AllocatedID: 56' doesn't exist
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 2471)
+
+View ID AllocatedID: 56 not found during lookup. StraVge behaviour mayedID: 56
+ 
+(Filenamd dur:/BuildAgent/worange behavio264faay occur
+ 
+(Filename: C:/BuildAgentpp Lin/812c4f8)
+
+9264fad/Runtime/Network/Networkn 'RPCSp.cpp iren' b1678se 
+t
+he networkn't perforcatedID:e Net ork.Ddoesn'y becaute ehxist
+ 
+(Filename: C:/BuildAge56' cork/812c4f504locatfad/R
+u
+(FilenNetworC/NetworkManager.cpp Line: 2471)
+
+d/Runtime/NetVoiew ID AllocatedID: 56 not found d
+u
+ring lookup. Strange behaviour may occur
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 1678)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 56' could not be located.
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 2460)
+
+empty space
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:44)
-BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:30)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:16)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:55)
+BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:33)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:17)
  
 (Filename: C Line: 0)
 
-FireLength: 2
+empty space
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:44)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:55)
+BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:33)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:17)
+ 
+(Filename: C Line: 0)
+
+empty space
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:55)
+BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:33)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:17)
+ 
+(Filename: C Line: 0)
+
+empty space
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:55)
+BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:34)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:17)
+ 
+(Filename: C Line: 0)
+
+empty space
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:55)
+BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:35)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:17)
+ 
+(Filename: C Line: 0)
+
+empty space
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:55)
+BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:35)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:17)
+ 
+(Filename: C Line: 0)
+
+empty space
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:55)
+BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:35)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:17)
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at BombBehaviour.Explode () [0x00012] in C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:28 
+  at BombBehaviour.Update () [0x00026] in C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:17 
+ 
+(Filename: C Line: 0)
+
+empty space
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:55)
 BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:31)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:16)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:17)
  
 (Filename: C Line: 0)
 
-FireLength: 2
+empty space
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:44)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:55)
+BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:31)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:17)
+ 
+(Filename: C Line: 0)
+
+empty space
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:55)
+BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:31)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:17)
+ 
+(Filename: C Line: 0)
+
+empty space
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:55)
 BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:32)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:16)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:17)
  
 (Filename: C Line: 0)
 
-S:7 F: 2
+empty space
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
-PowerUpBehaviour:OnTriggerEnter(Collider) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PowerUpBehaviour.js:38)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:55)
+BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:32)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:17)
+ 
+(Filename: C Line: 0)
+
+empty space
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:55)
+BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:32)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:17)
+ 
+(Filename: C Line: 0)
+
+empty space
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:55)
+BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:33)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:17)
+ 
+(Filename: C Line: 0)
+
+NullReferenceExceptpiyosnaceO
+bject EnrieefDebug:Internaet tog ant 2, String, Objn obje
+Unit
+yEnti eBDebug:Log(iour.Expl
+odeb eha i[0x0001lodeDir(Vector3\Vladimir\Doers\Vlad\mUr\noiumeBnts\Unin\Assets\korzh\Sets\korzhehaviipts\Behavihavi\oomb.jhs:28 
+  at Bo
+mbBehaviour.Update () [0x00026] in C:\ladimir\Documen\DocumetyBombermyan\mbesemsaknrzA\SsrspestBshakiorrshBoSbcehavts\Beha:iours\Bomb3)
+Bomioehrv.our:Upda
+ t
+e() (at C:\UsLine: 0)
+
+ir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:17)
+ 
+(Filename: C Line: 0)
+
+empty space
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:55)
+BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:33)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:17)
+ 
+(Filename: C Line: 0)
+
+empty space
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:55)
+BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:34)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:17)
+ 
+(Filename: C Line: 0)
+
+empty space
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:55)
+BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:34)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:17)
+ 
+(Filename: C Line: 0)
+
+empty space
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:55)
+BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:34)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:17)
+ 
+(Filename: C Line: 0)
+
+empty space
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:55)
+BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:35)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:17)
+ 
+(Filename: C Line: 0)
+
+empty space
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:55)
+BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:35)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:17)
+ 
+(Filename: C Line: 0)
+
+empty space
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:55)
+BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:35)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:17)
+ 
+(Filename: C Line: 0)
+
+empty space
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBombermaV\iAwssDeAllocorzh\Scripts\Behaound duriombBehakup. Stra55)
+Bbomaviour may :Eccur
+ 
+() (lenaC:\Use:/Builldimir\D/workents\UnityBom64fad/Runtime/\korzh\Scripts\Behavior.cp\Boine: ha678)
+
+.js:C6)
+BombBehaviour:Update() (at C:\Users\Vladimir\DocumennetUnityBomberman\Assets\korzh\Scriptt exehaviours\Bsom
+bB
+ehavinurmjs: C:/
+Bu
+ildAgente: C Line: 0)
+
+49264fad/Runtime/Network/NetworkManager.cpp Line: 2471)
+
+View ID AllocatedID: 60 netmpty space
+UnityEngine.Debug:Internalur maInt32, St
+ri
+nFilename: C:
+/nityEngine.Debug:Lo2c4f50492
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users 1678)mi
+r
+\DoCouldt't intyBomberman\Assets\korzh\Scripts\Behaviourshe nebBehaviour.js:l55)
+BombBehaviour:Explodest
+ 
+(FC:\Users\Vl:/dimir\Documents\U812c4f5049264nfad/Runtime/Netwripts\Behaviours\BombBehLine: 2471)
+6
+)
+BombBeieav ID Allocate() (at C:\Users\Vladurin\Documents\Unitnge behavan\Assets\korzh\
+Sc
+riptsnameh a:/Buils\Bgenb/wora/8iour.js:9264f
+ a
+d/Runtime: C Line: 0)
+
+orkManager.cpp Line: 1678)
+
+Could't invoke RPC function 'RPCSpawnFire' becauseethe networkV
+iew 'Engine.Dedbu: 60'teoesal_Logist
+ 
+(Filtring, Ob:/Build
+Agent/ngine.Debug:Log92Ob6e4f)
+B/mbuntime/Nutwork/NetworkMaector3) (atLine:U 2471)
+
+dimir\Documents\U AllocatedIDa: 60 not found during loehaviours\BombBehaviour.js:55)
+Bomb
+B
+(Filename: C:/BuildAgent/wUsers\Vladim049264cuad/Ru\UnityBombermk/NetworkManager.cpripts\Beha678)
+
+s\Bombld'tainvour. RPC 6)
+BombBehavioupawnFirte() (at C:\Users\VlorkViir\Documents\dID: yBo' doesan\Assets\k
+or
+(Filename: C:/BuildAgenBombBehaviour.j049274fa
+d/
+RFiltnimee:NetLinr: 0N
+e
+tworkManager.cpp Line: 2471)
+
+View ID AllocatedID: 60 not found during lookup. Strange behaviour may occur
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 1678)
+
+Could't invoke RPC function 'RPCSpawnFire' because the networkView 'AllocatedID: 60' doesn't exist
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 2471)
+
+View ID AllocatedID: 60 not found during lookup. Strange behaviour may occur
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 1678)
+
+Could't invoke RPC function 'RPCSpawnFire' because the networkView 'AllocatedID: 60' doesn't exist
+ 
+(Filename: C:/BuildAgVniework/812c4catedID: 60 not found during lookup. Stran.cppbehavi: ur m1ay
+
+ occur
+ 
+(FilenView eD AllocatedID: 60/work/812c4f5049264fad/Runtime/Network/NetworkManagur
+ 
+(Filename: C:/
+B
+uildCouldn'orkerform remote NetworuntDestroyt because trkeMnanager.cpp Line: 1678)ID
+:
+ 60' coould not be  RPC funct
+i
+(FilenampawnF:/BuildAgeuse the networkVi4ew 'Aad/RuatedIe/Network/esn'workManag
+er
+(Filenaine: :/Bui)
+
+Agent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 2471)
+
+View ID AllocatedID: 60 not found during lookup. Strange behaviour may occur
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 1678)
+
+Could't invoke RPC function 'RPCSpawnFire' because the networkView 'AllocatedID: 60' doesn't exist
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 2471)
+
+View ID AllocatedID: 60 not found during lookup. Strange behaviour may occur
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 1678)
+
+Could't invoke RPC function 'RPCSpawnFire' because the networkView 'AllocatedID: 60' doesn't exist
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 2471)
+
+View ID AllocatedID: 60 not found during lookup. Strange behaviour may occur
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 1678)
+
+Could't invoke RPC function 'RPCSpawnFire' because the networkView 'AllocatedID: 60' doesn't exist
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 2471)
+
+View ID AllocatedID: 60 not found during lookup. Strange behaviour may occur
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 1678)
+
+Could't invoke RPC function 'RPCSpawnFire' because the networkView 'AllocatedID: 60' doesn't exist
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 2471)
+
+View ID AllocatedID: 60 not found during lookup. Strange behaviour may occur
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 1678)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 60' could not be located.
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 2460)
+
+empty space
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:55)
+BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:31)
+BombBehaviour:DestroyBlock(RaycastHit) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:83)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:50)
+BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:33)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:17)
+ 
+(Filename: C Line: 0)
+
+empty space
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:55)
+BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:31)
+BombBehaviour:DestroyBlock(RaycastHit) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:83)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:50)
+BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:33)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:17)
+ 
+(Filename: C Line: 0)
+
+empty space
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:55)
+BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:32)
+BombBehaviour:DestroyBlock(RaycastHit) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:83)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:50)
+BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:33)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:17)
+ 
+(Filename: C Line: 0)
+
+empty space
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:55)
+BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:35)
+BombBehaviour:DestroyBlock(RaycastHit) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:83)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:50)
+BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:33)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:17)
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at BoemptBehaviour
+.EityEnde ne. [ex00g:Internal:\Userst32, Strir\Documenct)
+UnityBomberm.Debug:Log(Object)
+BombBehaviviourxplodeDir(Vector.js:28 
+  asers\Vladimir\urocuments\UnityBomberman \A:sssers\kladzh\Scriptsments\UnityB\oombBehan\Asse.jskorzh\
+Scripehaviour:iours\BombB(at C:\Us.js:1Vlad
+ 
+(Filename: C Line: 0)
+
+rman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:35)
+BombBehaviour:DestroyBlock(RaycastHit) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:83)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:50)
+BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:33)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:17)
+ 
+(Filename: C Line: 0)
+
+empty space
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:55)
+BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:35)
+BombBehaviour:DestroyBlock(RaycastHit) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:83)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:50)
+BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:33)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:17)
+ 
+(Filename: C Line: 0)
+
+empty space
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:55)
+BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:34)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:17)
+ 
+(Filename: C Line: 0)
+
+empty space
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:55)
+BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:34)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:17)
+ 
+(Filename: C Line: 0)
+
+empty space
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:55)
+BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:35)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:17)
+ 
+(Filename: C Line: 0)
+
+empty space
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:55)
+BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:35)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:17)
+ 
+(Filename: C Line: 0)
+
+empty space
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:55)
+BombBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:35)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:17)
+ 
+(Filename: C Line: 0)
+
+View ID AllocatedID: 61 not found during lookup. Strange behaviouer ma y occar
+ 
+(Filenamet found durigent/work/812trange be64faiour maime/cetwrr
+UNetworkMana.Netwcpp Line: 1678)AL
+L
+_DestCould't invoke RPC f
+UnityEng 'RPCSpawoFire' becauseetwhe networkV
+UnityEngine.NeID: 61:Destroy(GameObje
+ct
+)
+iBonmbB: ha:/BuildAgplt/work/8at C:\Users\Vladimir\Dme/Netts\UnitytworkManager.cpp Line: 2471)
+
+s\Behaviours\BombBehaviour.js:39)
+BomVBehaviouAllocaatedID:(a6t C:t fsunr d\Vinadlookup. Strange behaviourbery occur
+ ts
+\korzhame: C:/B\BedAgent/rs\Bom812c4f50492.js:17)
+
+[Cime/NeldAgent/etwork812c4f50492p Liad/e: 1678)
+e
+work/Netuld'tManager.cppC funn c678] 
+(Filenime: 'RPCiSp:wn0ire
+'
+ because the networkView 'AllocatedID: 61' doesn't exist
+ 
+(Filename: C:/BuildAgent/workC81ulc4f50 destroy oRuntit becauwork/NetworkManager.cpp L view w471)
+
+t found
+UnityEngine.NetwView ID ANllocatedID: roy(Networund dwID&)
+UnityEn. Str.Nnge oehaviostroy(N occur
+ 
+(ID)
+UnityEngine.Netwont/woestroy(GameObject)
+BombBehme/Neurw:rk/NetworkManager\UsersLiVla 1imi)
+Do
+cuments\UnityBombermC function 'RPCh\Scripts\Behaviours\BombBehaviour.js 'Allo
+BombBehaviou' doesnte() (ist
+C:\
+Users\ame: C:/r\Documents\Unrk/81omberma49264sets\kortime/Nrtwork\BehavirkMan\BombBehavLine: 24717)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkMaVager ID Alloca 1386D: 6
+(Filename: C Line: 0)
+
+kup. Strange behaviour may occur
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 1678)
+
+Could't invoke RPC function 'RPCSpawnFire' because the networkView 'AllocatedID: 61' doesn't exist
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 2471)
+
+View ID AllocatedID: 61 not found during lookup. Strange behaviour may occur
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 1678)
+
+Could't invoke RPC function 'RPCSpawnFire' because the networkView 'AllocatedID: 61' doesn't exist
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 2471)
+
+View ID AllocatedID: 61 not found during lookup. Strange behaviour may occur
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 1678)
+
+Could't invoke RPC function 'RPCSpawnFire' because the networkView 'AllocatedID: 61' doesn't exist
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 2471)
+
+Clean up after player 1
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+NetworkManager:OnPlayerDisconnected(NetworkPlayer) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\NetworkManager.js:49)
+ 
+(Filename: C Line: 0)
+
+Registered on Master Server
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+NetworkManager:OnMasterServerEvent(MasterServerEvent) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\NetworkManager.js:71)
  
 (Filename: C Line: 0)
 

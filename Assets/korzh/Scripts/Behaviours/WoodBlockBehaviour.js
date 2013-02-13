@@ -9,6 +9,6 @@ function Start () {
 
 function Explode(){
 	if (Random.value > 1 - PowerUpChance){
-		Instantiate(PowerUp, transform.position, transform.rotation);
+		Network.Instantiate(PowerUp, transform.position, transform.rotation,1);
 	}
 }

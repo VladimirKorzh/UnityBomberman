@@ -7,6 +7,7 @@ var TimeToExplosion = 2.0f;
 var BombExplosionPrefab : GameObject;
 var BlockExplosionPrefab : GameObject;
 var ExplosionFlameParticleEffect : GameObject;
+var LinkedPlayer : GameObject;
 
 function Update(){
     Timer += 1 * Time.deltaTime;
@@ -17,13 +18,15 @@ function Update(){
 	}
 
 }
+function LinkPlayer(Player: GameObject){
+	LinkedPlayer = Player;
+}
 
 function Explode(){
 		if (!EXPLODED){
 			EXPLODED = true;
-			var playerObject = GameObject.Find("Player");
-     		playerObject.GetComponent(UserInterface).BombsList.Remove( gameObject );
-		    Instantiate(BombExplosionPrefab, transform.position, transform.rotation);
+     		LinkedPlayer.GetComponent(UserInterface).BombsList.Remove( gameObject );
+			networkView.RPC("RPCDestroyBlock", RPCMode.All, transform.position);		    	    	    
 		    	    	    
 			ExplodeDir(Vector3(1,0,0));
 			ExplodeDir(Vector3(-1,0,0));
@@ -33,15 +36,14 @@ function Explode(){
 			ExplodeDir(Vector3(0,-1,0));						
 		    
  	   	}
-		Destroy(gameObject);
+		Network.Destroy(gameObject);
 }
 
 
 function ExplodeDir(dir : Vector3){
     var hit : RaycastHit;
     var fire: GameObject;
-	var playerObject = GameObject.Find("Player");
-	var FireLength = playerObject.GetComponent(UserInterface).getFireLength();         
+	var FireLength = LinkedPlayer.GetComponent(UserInterface).getFireLength();         
     
     for (var i=1;i<=FireLength;i++){
     	if (Physics.Linecast(transform.position, transform.position+dir*i,hit)) {
@@ -49,27 +51,35 @@ function ExplodeDir(dir : Vector3){
     		break;
     	}
     	else{
-    		fire = Instantiate(ExplosionFlameParticleEffect, transform.position+dir*i,Quaternion.identity);
-   			Destroy(fire,0.8);
+			networkView.RPC("RPCSpawnFire", RPCMode.All, transform.position+dir*i);   			
    			Debug.Log("empty space");
     	}		    
     }
 }
 
+@RPC
+function RPCDestroyBlock(pos:Vector3){
+	Instantiate(BlockExplosionPrefab, pos, Quaternion.identity);
+}
+
+@RPC
+function RPCSpawnFire(pos:Vector3){
+	var fire = Instantiate(ExplosionFlameParticleEffect, pos,Quaternion.identity);
+	Destroy(fire,0.8);
+}
+
+
 function DestroyBlock(hit:RaycastHit){
 
   		if (hit.collider.tag == "WoodBlock") {
-		    Instantiate(BlockExplosionPrefab, hit.transform.position, hit.transform.rotation);
+			networkView.RPC("RPCDestroyBlock", RPCMode.All, hit.collider.gameObject.transform.position);
 		    hit.collider.gameObject.GetComponent(WoodBlockBehaviour).Explode();	 
-			Destroy(hit.collider.gameObject);
+			Network.Destroy(hit.collider.gameObject);
   		}
   		if (hit.collider.tag == "PowerUp") { 
-			Destroy(hit.collider.gameObject);
+			Network.Destroy(hit.collider.gameObject);
   		}  		
   		if (hit.collider.tag == "Bomb"){
   			hit.collider.gameObject.GetComponent(BombBehaviour).Explode();
-  		}
-  		if (hit.collider.tag == "MainCamera"){
-  			Debug.Log("Player died");
   		}	
 }

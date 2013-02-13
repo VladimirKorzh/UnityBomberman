@@ -44,6 +44,17 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\AStar\BuildGraph.cs" />
+     <Compile Include="Assets\AStar\ClickToMove.cs" />
+     <Compile Include="Assets\AStar\CoverIdentifier.cs" />
+     <Compile Include="Assets\AStar\Movement.cs" />
+     <Compile Include="Assets\AStar\OrbitCamera.cs" />
+     <Compile Include="Assets\AStar\PinchPointIdentifier.cs" />
+     <Compile Include="Assets\AStar\RadiusModifier.cs" />
+     <Compile Include="Assets\AStar\Seeker.cs" />
+     <Compile Include="Assets\AStar\Turning.cs" />
+     <Compile Include="Assets\AStar\Walking.cs" />
+     <Compile Include="Assets\AStar\WeakTable.cs" />
      <Compile Include="Assets\Detonator Explosion Framework\System\Detonator.cs" />
      <Compile Include="Assets\Detonator Explosion Framework\System\DetonatorBurstEmitter.cs" />
      <Compile Include="Assets\Detonator Explosion Framework\System\DetonatorCloudRing.cs" />
@@ -57,6 +68,48 @@
      <Compile Include="Assets\Detonator Explosion Framework\System\DetonatorSound.cs" />
      <Compile Include="Assets\Detonator Explosion Framework\System\DetonatorSparks.cs" />
      <Compile Include="Assets\Detonator Explosion Framework\System\DetonatorSpray.cs" />
+     <Compile Include="Assets\Fantasy AI Free Edition\Scripts\AI Scripts\Cull.cs" />
+     <Compile Include="Assets\Fantasy AI Free Edition\Scripts\AI Scripts\DistanceActive.cs" />
+     <Compile Include="Assets\Fantasy AI Free Edition\Scripts\AI Scripts\FreeAI.cs" />
+     <Compile Include="Assets\Fantasy AI Free Edition\Scripts\AI Scripts\Health.cs" />
+     <Compile Include="Assets\Fantasy AI Free Edition\Scripts\Player\AICount.cs" />
+     <Compile Include="Assets\Fantasy AI Free Edition\Scripts\Player\HealthPotion.cs" />
+     <Compile Include="Assets\Fantasy AI Free Edition\Scripts\Player\PlayerController.cs" />
+     <Compile Include="Assets\UnitySteer\AngryAntPathway.cs" />
+     <Compile Include="Assets\UnitySteer\Behaviors\AutonomousVehicle.cs" />
+     <Compile Include="Assets\UnitySteer\Behaviors\Radar.cs" />
+     <Compile Include="Assets\UnitySteer\Behaviors\RadarPing.cs" />
+     <Compile Include="Assets\UnitySteer\Behaviors\SphericalObstacleData.cs" />
+     <Compile Include="Assets\UnitySteer\Behaviors\SteerForAlignment.cs" />
+     <Compile Include="Assets\UnitySteer\Behaviors\SteerForCohesion.cs" />
+     <Compile Include="Assets\UnitySteer\Behaviors\SteerForEvasion.cs" />
+     <Compile Include="Assets\UnitySteer\Behaviors\SteerForNeighborAvoidance.cs" />
+     <Compile Include="Assets\UnitySteer\Behaviors\SteerForNeighbors.cs" />
+     <Compile Include="Assets\UnitySteer\Behaviors\SteerForPoint.cs" />
+     <Compile Include="Assets\UnitySteer\Behaviors\SteerForPursuit.cs" />
+     <Compile Include="Assets\UnitySteer\Behaviors\SteerForSeparation.cs" />
+     <Compile Include="Assets\UnitySteer\Behaviors\SteerForSphericalObstacleAvoidance.cs" />
+     <Compile Include="Assets\UnitySteer\Behaviors\SteerForTarget.cs" />
+     <Compile Include="Assets\UnitySteer\Behaviors\SteerForTether.cs" />
+     <Compile Include="Assets\UnitySteer\Behaviors\SteerForWander.cs" />
+     <Compile Include="Assets\UnitySteer\Behaviors\SteerToFollowPath.cs" />
+     <Compile Include="Assets\UnitySteer\Behaviors\Steering.cs" />
+     <Compile Include="Assets\UnitySteer\Behaviors\Vehicle.cs" />
+     <Compile Include="Assets\UnitySteer\Helpers\IRadarReceiver.cs" />
+     <Compile Include="Assets\UnitySteer\Helpers\ITick.cs" />
+     <Compile Include="Assets\UnitySteer\Helpers\RandomizePosition.cs" />
+     <Compile Include="Assets\UnitySteer\Helpers\SteeringEvent.cs" />
+     <Compile Include="Assets\UnitySteer\Helpers\Tick.cs" />
+     <Compile Include="Assets\UnitySteer\Obstacle.cs" />
+     <Compile Include="Assets\UnitySteer\OpenSteerUtility.cs" />
+     <Compile Include="Assets\UnitySteer\PathWay.cs" />
+     <Compile Include="Assets\UnitySteer\PolylinePathway.cs" />
+     <Compile Include="Assets\UnitySteer\UnderReview\Proximity.cs" />
+     <Compile Include="Assets\UnitySteer\UnderReview\SimpleVehicle.cs" />
+     <Compile Include="Assets\UnitySteer\UnderReview\SteerLibrary.cs" />
+     <Compile Include="Assets\UnitySteer\UnderReview\SteeringVehicle.cs" />
+     <Compile Include="Assets\UnitySteer\UnderReview\lq.cs" />
+     <Compile Include="Assets\UnitySteer\UnderReview\lqProximity.cs" />
      <Compile Include="Assets\korzh\Scripts\Miscelaneous\MouseLook.cs" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseEffectShaderRGB.shader" />
@@ -65,6 +118,7 @@
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\GlowConeTap.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SunShaftsComposite.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ColorCorrectionCurves.shader" />
+     <None Include="Assets\UnitySteer\License.txt" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\NFAA.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\VignetteShader.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\DepthOfFieldScatter.shader" />
@@ -73,6 +127,7 @@
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\GlowCompose.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Contrast Stretch\MinMaxReduction.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\SSAA.shader" />
+     <None Include="Assets\Medieval Village\[Shared]\Shaders\MeshTerrain4Splats.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\RadialBlur.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\DepthOfFieldDX11.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ContrastComposite.shader" />
@@ -82,6 +137,7 @@
      <None Include="Assets\Detonator Explosion Framework\Resources\Detonator\Textures\HeatDistort.shader" />
      <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\FX-SimpleWater4.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\frag_ao.cginc" />
+     <None Include="Assets\UnitySteer\C5\LICENSE.txt" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\DepthOfField34.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\TiltShift.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SSAOShader.shader" />
@@ -98,12 +154,14 @@
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\Bokeh34.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\CameraMotionBlurDX11.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\SeparableBlurPlus.shader" />
+     <None Include="Assets\Fantasy AI Free Edition\README.txt" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\MultiPassHollywoodFlares.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\BlurEffectConeTaps.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\CameraMotionBlur.shader" />
      <None Include="Assets\Standard Assets\Water (Pro Only)\Sources\Shaders\FX-Water.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\DLAA.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseAndGrainDX11.shader" />
+     <None Include="Assets\Fantasy AI Free Edition\Models\SkeletonData\animations.txt" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BrightPassFilter2.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\SeparableBlur.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\MotionBlurClear.shader" />
@@ -134,6 +192,9 @@
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BlendForBloom.shader" />
  <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>Library\ScriptAssemblies\Assembly-UnityScript-firstpass.dll</HintPath>
+ </Reference>
+ <Reference Include="C5">
+ <HintPath>Assets\UnitySteer\C5\C5.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

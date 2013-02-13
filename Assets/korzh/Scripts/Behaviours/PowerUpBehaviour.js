@@ -39,15 +39,12 @@ function Update () {
 }
 
 function OnTriggerEnter (other : Collider) {
-
-	var playerObject = GameObject.Find("Player");
-
 	switch(type) {
-		case POWERUP.Speed: playerObject.GetComponent(UserInterface).buffSpeedBuff();  break;
-		case POWERUP.Fire:  playerObject.GetComponent(UserInterface).buffFireLength(); break;
-		case POWERUP.Bomb:  playerObject.GetComponent(UserInterface).buffBombs(); break;
+		case POWERUP.Speed: other.GetComponent(UserInterface).buffSpeedBuff();  break;
+		case POWERUP.Fire:  other.GetComponent(UserInterface).buffFireLength(); break;
+		case POWERUP.Bomb:  other.GetComponent(UserInterface).buffBombs(); break;
 		}
 	
 	AudioSource.PlayClipAtPoint(soundToPlay, transform.position);
-	Destroy(gameObject);
+	Network.Destroy(gameObject);
 }
