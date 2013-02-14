@@ -7,17 +7,18 @@ var maxBombCount     = 5;
 var maxFireLength    = 7;
 var maxSpeedBuff     = 7;
 
-var WoodenBlock : GameObject;
+var colorChoices : Color[];
+
 var Bomb  : GameObject;
 
 var BombsList: Array = Array();
-
 
 
 function Start() {
     Screen.lockCursor = true;
 	if(networkView.isMine){    
 	    Camera.mainCamera.GetComponent(SmoothFollow).target = gameObject.transform;
+	    gameObject.Find("Ice Golem").renderer.material.color = colorChoices[Random.Range(0, (colorChoices.length)) ];
 	}
 }
 
@@ -30,10 +31,15 @@ function Update () {
 	}
 }
 
-
 function PlaceBomb(){
 	if (BombsList.Count < currmaxBombCount){
-	    var newpos = transform.position;
+//	    var newpos = transform.position + Vector3(0, 0.65, 0);
+	    
+	    var currentPos = transform.position;
+	    var newpos = Vector3(Mathf.Round(currentPos.x),
+                             		 currentPos.y + 0.4,
+                             		 Mathf.Round(currentPos.z));
+	    	    
 	    var boom = Network.Instantiate(Bomb, newpos, Quaternion.identity,1);
 	    boom.GetComponent(BombBehaviour).LinkPlayer(gameObject);
 	    BombsList.Add( boom );	    

@@ -41,11 +41,8 @@ function OnTriggerEnter (other : Collider) {
 			case PowerUp.Bomb:   other.GetComponent(UserInterface).buffBombs();      break;
 		}
 		
-		AudioSource.PlayClipAtPoint(soundToPlay, transform.position);
-	
-	Network.Destroy(gameObject);
-	}
-	else {
-		Debug.Log("Wrong collider");
+		AudioSource.PlayClipAtPoint(soundToPlay, transform.position);		
+		if (networkView.isMine) Network.Destroy(gameObject);
+		Debug.Log("powerup pickedup " + networkView.viewID);
 	}
 }

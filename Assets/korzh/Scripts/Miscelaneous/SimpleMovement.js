@@ -10,6 +10,12 @@ var gravity : float = 20.0;
 
 private var moveDirection : Vector3 = Vector3.zero;
 
+@RPC
+function PlayAnimation(animationName : String){
+	animation.CrossFade(animationName);
+}
+
+
 function Update() {
 	if(networkView.isMine){
 	    var controller : CharacterController = GetComponent(CharacterController);
@@ -18,7 +24,13 @@ function Update() {
 	        // move direction directly from axes
 	        moveDirection = Vector3(Input.GetAxis("Horizontal"), 0,
 	                                Input.GetAxis("Vertical"));
-	        moveDirection = transform.TransformDirection(moveDirection);
+	                                
+	        if (moveDirection != Vector3.zero) {
+	            var rotation = transform.rotation; 
+	            rotation.SetLookRotation(moveDirection); 
+	            transform.rotation = rotation;
+	        }
+	        
 	        moveDirection *= speed;
 	        
 	        if (Input.GetButton ("Jump")) {
@@ -31,8 +43,20 @@ function Update() {
 	    
 	    // Move the controller
 	    controller.Move(moveDirection * Time.deltaTime);
+	    
+	    // animations go here
+    	if (!controller.isGrounded) {
+    		networkView.RPC("PlayAnimation", RPCMode.All, "jump");
+   		} else	    
+	    	if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0){
+    			networkView.RPC("PlayAnimation", RPCMode.All, "run");
+	    	} else {
+    			networkView.RPC("PlayAnimation", RPCMode.All, "idle");
+	    		}	    
+	    
+	    
     }
     else{
-    	enabled = false;
+    	//enabled = false;
     }
 }
