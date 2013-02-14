@@ -1,5 +1,12 @@
 #pragma strict
-var nm : NetworkManager;
+
+//@script ExecuteInEditMode()
+
+var nm         : NetworkManager;
+var state      : int;
+var screenName : String;
+
+
 
 enum GUIState {
 	PlayingMatch = 0,
@@ -9,8 +16,6 @@ enum GUIState {
 	BrowsingHostlistDone = 4,
 	Loading = 5
 }
-var state:int;
-var screenName:String;
 
 function Start(){
 	state = GUIState.MainMenu;
@@ -26,9 +31,7 @@ function MainMenuScreen(){
 		nm.startServer();
 		GetComponent(LevelManager).CreateDebugLevel();
 		GetComponent(LevelManager).spawnPlayer();
-	}
-	
-	
+	}	
 	if (GUI.Button(Rect(25,100,150,50), "Create a new Game")){
 		state = GUIState.CreatingGame;
 	}
@@ -90,10 +93,6 @@ function LoadingScreen(){
     }	
 }
 
-
-
-
-
 function OnGUI(){
 	switch (state) {
 		case GUIState.MainMenu: MainMenuScreen(); break;
@@ -103,13 +102,6 @@ function OnGUI(){
 		case GUIState.Loading: LoadingScreen(); break;
 		case GUIState.PlayingMatch: break;
 	}
-		
-	
-//				// This line feeds "This is the tooltip" into GUI.tooltip
-//				GUI.Button (Rect (10,10,100,20), GUIContent ("Click me", "This is the tooltip"));
-//				// This line reads and displays the contents of GUI.tooltip
-//				GUI.Label (Rect (10,40,100,20), GUI.tooltip);
-//					break;
 }
 
 function Update () {

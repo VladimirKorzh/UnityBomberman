@@ -1,16 +1,11 @@
 #pragma strict
 
-//static var BombCount  : int = 1;
-//static var FireLength : int = 1;
-//static var SpeedBuff  : int = 2;
-
-var FireLength : int;
-var SpeedBuff  : int;
+var FireLength       : int;
+var SpeedBuff        : int;
 var currmaxBombCount : int;
-var maxBombCount = 5;
-
-var maxFireLength = 7;
-var maxSpeedBuff = 7;
+var maxBombCount     = 5;
+var maxFireLength    = 7;
+var maxSpeedBuff     = 7;
 
 var WoodenBlock : GameObject;
 var Bomb  : GameObject;
@@ -21,21 +16,20 @@ var BombsList: Array = Array();
 
 function Start() {
     Screen.lockCursor = true;
+    Camera.mainCamera.GetComponent(SmoothFollow).target = gameObject.transform;
 }
 
-function Update () {
-	var hit : RaycastHit;
-		
+function Update () {	
 	if (Input.GetKeyDown(KeyCode.Escape)){
 		Screen.lockCursor = !Screen.lockCursor;
 	}	
 	if(networkView.isMine){
-		if (Input.GetKeyDown(KeyCode.LeftShift)) PlaceBomb(hit);
+		if (Input.GetKeyDown(KeyCode.LeftShift)) PlaceBomb();
 	}
 }
 
 
-function PlaceBomb(hit : RaycastHit){
+function PlaceBomb(){
 	if (BombsList.Count < currmaxBombCount){
 	    var newpos = transform.position;
 	    var boom = Network.Instantiate(Bomb, newpos, Quaternion.identity,1);
@@ -43,17 +37,6 @@ function PlaceBomb(hit : RaycastHit){
 	    BombsList.Add( boom );	    
     }
 }	
-//function DestroyBlock(hit : RaycastHit){
-//	if (hit.collider.tag == "WoodBlock") {
-//		Destroy(hit.collider.gameObject);
-//	}
-//}
-//function PlaceBlock(hit : RaycastHit){
-//	if (hit.collider.tag == "WoodBlock"){	    
-//	    var newpos = hit.normal + hit.transform.position;
-//	    Instantiate (WoodenBlock, newpos, Quaternion.identity);
-//    }
-//}	
 
 function buffBombs(){
 	if (currmaxBombCount < maxBombCount) currmaxBombCount+=1;	
@@ -79,3 +62,16 @@ function getBombCountCurrent(){
 function getBombCount(){
 	return currmaxBombCount;
 }
+
+
+//function DestroyBlock(hit : RaycastHit){
+//	if (hit.collider.tag == "WoodBlock") {
+//		Destroy(hit.collider.gameObject);
+//	}
+//}
+//function PlaceBlock(hit : RaycastHit){
+//	if (hit.collider.tag == "WoodBlock"){	    
+//	    var newpos = hit.normal + hit.transform.position;
+//	    Instantiate (WoodenBlock, newpos, Quaternion.identity);
+//    }
+//}	

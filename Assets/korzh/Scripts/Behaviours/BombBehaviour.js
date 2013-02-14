@@ -4,20 +4,25 @@ var Timer = 0.0f;
 var EXPLODED = false;
 var TimeToExplosion = 2.0f;
 
-var BombExplosionPrefab : GameObject;
-var BlockExplosionPrefab : GameObject;
+var BombExplosionPrefab          : GameObject;
+var BlockExplosionPrefab         : GameObject;
 var ExplosionFlameParticleEffect : GameObject;
-var LinkedPlayer : GameObject;
+var LinkedPlayer                 : GameObject;
 
 function Update(){
-    Timer += 1 * Time.deltaTime;
-    
-	if(Timer >= TimeToExplosion)
-	{
-		Explode();
+	if(networkView.isMine){
+	    Timer += 1 * Time.deltaTime;    
+		if(Timer >= TimeToExplosion) Explode();
+		
+		Debug.DrawLine(transform.position, transform.position+Vector3(1,0,0)*3,  Color.red);
+		Debug.DrawLine(transform.position, transform.position+Vector3(-1,0,0)*3, Color.red);
+		Debug.DrawLine(transform.position, transform.position+Vector3(0,0,1)*3,  Color.red);
+		Debug.DrawLine(transform.position, transform.position+Vector3(0,0,-1)*3, Color.red);
+		Debug.DrawLine(transform.position, transform.position+Vector3(0,1,0)*3,  Color.red);
+		Debug.DrawLine(transform.position, transform.position+Vector3(0,-1,0)*3, Color.red);
 	}
-
 }
+
 function LinkPlayer(Player: GameObject){
 	LinkedPlayer = Player;
 }
@@ -47,7 +52,8 @@ function ExplodeDir(dir : Vector3){
     
     for (var i=1;i<=FireLength;i++){
     	if (Physics.Linecast(transform.position, transform.position+dir*i,hit)) {
-    		DestroyBlock(hit);  			  
+    		DestroyBlock(hit);  	
+	  
     		break;
     	}
     	else{
@@ -59,11 +65,13 @@ function ExplodeDir(dir : Vector3){
 
 @RPC
 function RPCDestroyBlock(pos:Vector3){
+	Debug.Log("explosion animation rcvd");	
 	Instantiate(BlockExplosionPrefab, pos, Quaternion.identity);
 }
 
 @RPC
 function RPCSpawnFire(pos:Vector3){
+	Debug.Log("fire animation rcvd");	
 	var fire = Instantiate(ExplosionFlameParticleEffect, pos,Quaternion.identity);
 	Destroy(fire,0.8);
 }
@@ -72,14 +80,17 @@ function RPCSpawnFire(pos:Vector3){
 function DestroyBlock(hit:RaycastHit){
 
   		if (hit.collider.tag == "WoodBlock") {
+    		Debug.Log("block hit");	
 			networkView.RPC("RPCDestroyBlock", RPCMode.All, hit.collider.gameObject.transform.position);
 		    hit.collider.gameObject.GetComponent(WoodBlockBehaviour).Explode();	 
 			Network.Destroy(hit.collider.gameObject);
   		}
-  		if (hit.collider.tag == "PowerUp") { 
+  		if ( hit.collider.tag == "PowerUp") { 
 			Network.Destroy(hit.collider.gameObject);
+    		Debug.Log("powerup hit");	
   		}  		
   		if (hit.collider.tag == "Bomb"){
   			hit.collider.gameObject.GetComponent(BombBehaviour).Explode();
+			Debug.Log("bomb hit");	
   		}	
 }

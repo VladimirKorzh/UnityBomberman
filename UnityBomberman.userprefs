@@ -1,24 +1,15 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\korzh\Scripts\Behaviours\PowerUpBehaviour.js">
-    <Files>
-      <File FileName="Assets\korzh\Scripts\LevelManager.js" Line="45" Column="21" />
-      <File FileName="Assets\korzh\Scripts\NetworkManager.js" Line="39" Column="26" />
-      <File FileName="Assets\korzh\Scripts\GuiManager.js" Line="26" Column="20" />
-      <File FileName="Assets\korzh\Scripts\UserInterface.js" Line="34" Column="3" />
-      <File FileName="Assets\korzh\Scripts\Behaviours\BombBehaviour.js" Line="69" Column="2" />
-      <File FileName="Assets\Detonator Explosion Framework\System\DetonatorFireball.cs" Line="159" Column="1" />
-      <File FileName="Assets\korzh\Scripts\Behaviours\PowerUpBehaviour.js" Line="32" Column="37" />
-      <File FileName="Assets\korzh\Scripts\Miscelaneous\SimpleMovement.js" Line="14" Column="2" />
-      <File FileName="Assets\korzh\Scripts\Behaviours\WoodBlockBehaviour.js" Line="12" Column="72" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
-          <Node name="Assembly-CSharp" expanded="True">
+          <Node name="Assembly-CSharp-firstpass" expanded="True">
             <Node name="Assets" expanded="True">
-              <Node name="Detonator Explosion Framework" expanded="True">
-                <Node name="System" expanded="True" />
+              <Node name="Plugins" expanded="True">
+                <Node name="whydoidoit.com" expanded="True">
+                  <Node name="FSM" expanded="True" />
+                </Node>
               </Node>
             </Node>
           </Node>

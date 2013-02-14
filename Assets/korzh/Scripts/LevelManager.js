@@ -1,7 +1,7 @@
 #pragma strict
 
-var StoneBlock: GameObject;
-var WoodenBlock: GameObject;
+var StoneBlock   : GameObject;
+var WoodenBlock  : GameObject;
 
 var playerPrefab : GameObject;
 var spawnObject  : Transform;

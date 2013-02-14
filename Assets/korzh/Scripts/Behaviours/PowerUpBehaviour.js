@@ -1,50 +1,51 @@
 #pragma strict
 //@script RequireComponent(AudioSource)
 
-var materials : Material[];
-
-var pickupSound : AudioClip[];
 var soundToPlay : AudioClip;
+var Type : int;
 
-enum POWERUP{
-	Speed = 0,
-	Fire  = 1,
-	Bomb  = 2
+var SpeedMaterial : Material; 
+var FireMaterial  : Material; 
+var BombMaterial  : Material; 
+
+public enum PowerUp { 
+	Speed = 1,
+	Fire  = 2,
+	Bomb  = 3
 }
-var type : int;
 
-function Start () {
-    if (materials.Length == 0) // do nothing if no materials
-        return;
-       
-    soundToPlay = pickupSound[0];    
+function Start () {   
     transform.localPosition.y -= 0.3;
-	var rnd = Random.value; 
-	if (rnd < 0.3){
-		renderer.sharedMaterial = materials[POWERUP.Speed];
-		type = POWERUP.Speed;
-	}
-	else if (rnd < 0.6){
-		renderer.sharedMaterial = materials[POWERUP.Fire];
-		type = POWERUP.Fire;
-	}
-	else {
-		renderer.sharedMaterial = materials[POWERUP.Bomb];
-		type = POWERUP.Bomb;	
-	}
 }
 
 function Update () {
 	transform.RotateAroundLocal(Vector3(1,0,1),Time.deltaTime*5);
 }
 
+@RPC
+function SetType(type:int) { 
+	Type = type;
+	switch (Type) {
+			case PowerUp.Speed:  renderer.sharedMaterial = SpeedMaterial;  break;
+			case PowerUp.Fire:   renderer.sharedMaterial = FireMaterial;   break;
+			case PowerUp.Bomb:   renderer.sharedMaterial = BombMaterial;   break;
+	}
+
+}
+
 function OnTriggerEnter (other : Collider) {
-	switch(type) {
-		case POWERUP.Speed: other.GetComponent(UserInterface).buffSpeedBuff();  break;
-		case POWERUP.Fire:  other.GetComponent(UserInterface).buffFireLength(); break;
-		case POWERUP.Bomb:  other.GetComponent(UserInterface).buffBombs(); break;
+	if (other.tag == "Player"){
+		switch(Type) {
+			case PowerUp.Speed:  other.GetComponent(UserInterface).buffSpeedBuff();  break;
+			case PowerUp.Fire:   other.GetComponent(UserInterface).buffFireLength(); break;
+			case PowerUp.Bomb:   other.GetComponent(UserInterface).buffBombs();      break;
 		}
+		
+		AudioSource.PlayClipAtPoint(soundToPlay, transform.position);
 	
-	AudioSource.PlayClipAtPoint(soundToPlay, transform.position);
 	Network.Destroy(gameObject);
+	}
+	else {
+		Debug.Log("Wrong collider");
+	}
 }
