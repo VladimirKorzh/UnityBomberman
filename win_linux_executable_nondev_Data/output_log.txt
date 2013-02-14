@@ -19,7 +19,18 @@ Platform assembly: C:\Users\Vladimir\Documents\UnityBomberman\win_linux_executab
 Loading C:\Users\Vladimir\Documents\UnityBomberman\win_linux_executable_nondev_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
 Platform assembly: C:\Users\Vladimir\Documents\UnityBomberman\win_linux_executable_nondev_Data\Managed\C5.dll (this message is harmless)
 Loading C:\Users\Vladimir\Documents\UnityBomberman\win_linux_executable_nondev_Data\Managed\C5.dll into Unity Child Domain
-- Completed reload, in  0.086 seconds
+- Completed reload, in  0.058 seconds
 desktop: 1366x768 60Hz; virtual: 2732x768 at -1366,0
 <RI> Initializing input.
 <RI> Input initialized.
+Platform assembly: C:\Users\Vladimir\Documents\UnityBomberman\win_linux_executable_nondev_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Vladimir\Documents\UnityBomberman\win_linux_executable_nondev_Data\Managed\UnityScript.Lang.dll (this message is harmless)
+Platform assembly: C:\Users\Vladimir\Documents\UnityBomberman\win_linux_executable_nondev_Data\Managed\Boo.Lang.dll (this message is harmless)
+Server Initialized
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 43)
+
+Registered on Master Server
+ 
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 43)
+

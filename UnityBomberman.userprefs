@@ -1,6 +1,14 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\korzh\Scripts\UserInterface.js">
+    <Files>
+      <File FileName="Assets\korzh\Scripts\LevelManager.js" Line="29" Column="20" />
+      <File FileName="Assets\korzh\Scripts\GuiManager.js" Line="1" Column="1" />
+      <File FileName="Assets\korzh\Scripts\UserInterface.js" Line="59" Column="19" />
+      <File FileName="Assets\korzh\Scripts\Behaviours\BombBehaviour.js" Line="1" Column="1" />
+      <File FileName="Assets\korzh\Scripts\Behaviours\WoodBlockBehaviour.js" Line="10" Column="29" />
+      <File FileName="Assets\korzh\Scripts\Behaviours\PowerUpBehaviour.js" Line="11" Column="20" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
@@ -17,10 +25,9 @@
             <Node name="Assets" expanded="True">
               <Node name="korzh" expanded="True">
                 <Node name="Scripts" expanded="True">
-                  <Node name="Behaviours" expanded="True">
-                    <Node name="PowerUpBehaviour.js" selected="True" />
-                  </Node>
+                  <Node name="Behaviours" expanded="True" />
                   <Node name="Miscelaneous" expanded="True" />
+                  <Node name="UserInterface.js" selected="True" />
                 </Node>
               </Node>
             </Node>

@@ -16,7 +16,9 @@ var BombsList: Array = Array();
 
 function Start() {
     Screen.lockCursor = true;
-    Camera.mainCamera.GetComponent(SmoothFollow).target = gameObject.transform;
+	if(networkView.isMine){    
+	    Camera.mainCamera.GetComponent(SmoothFollow).target = gameObject.transform;
+	}
 }
 
 function Update () {	
@@ -24,7 +26,7 @@ function Update () {
 		Screen.lockCursor = !Screen.lockCursor;
 	}	
 	if(networkView.isMine){
-		if (Input.GetKeyDown(KeyCode.LeftShift)) PlaceBomb();
+		if (Input.GetKeyDown(KeyCode.E)) PlaceBomb();
 	}
 }
 
