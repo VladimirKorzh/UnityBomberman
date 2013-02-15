@@ -17,7 +17,7 @@ var canJump = false;
 
 
 var PlacedBombsList = Array();	
-
+var lastPlacedBombPos = Vector3.zero;
 
 public enum BonusType { 
 	Speed = 1,
@@ -62,8 +62,24 @@ function PlaceBomb(){
 	    var newpos = Vector3(Mathf.Round(currentPos.x),
                              		 currentPos.y + 0.4,
                              		 Mathf.Round(currentPos.z));
-	    	    
+                             		 
+                             		 		
+		var colliders = Physics.OverlapSphere(newpos,0.35, (1 << 8) ) ;
+		  	
+		for (var j=0;j<colliders.Length;j++){		
+			Debug.Log(colliders[j].collider.tag);			
+			if (colliders[j].collider.tag == "Bomb"){
+				Debug.Log("Can't place bomb here, there is one already.");
+				return;
+			}			
+		}   	
+		if (lastPlacedBombPos == newpos) {
+			Debug.Log("You have just placed a bomb there.");
+	    	return;
+		}
+		
 	    var boom = Network.Instantiate(goBomb, newpos, Quaternion.identity,1);
+		lastPlacedBombPos = newpos;	    
 	    boom.GetComponent(BombBehaviour).LinkPlayer(gameObject);
 	    PlacedBombsList.Add( boom );	    
     }

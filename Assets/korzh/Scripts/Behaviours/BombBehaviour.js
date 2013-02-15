@@ -4,7 +4,7 @@ var Timer = 0.0f;
 var LerpTimer = 0.0f;
 var Exploded = false;
 var TimeToExplosion = 2.0f;
-var TimeToImpassable = 1;
+var TimeToImpassable = 0.5;
 var BombExplosionPrefab          : GameObject;
 var BlockExplosionPrefab         : GameObject;
 var ExplosionFlameParticleEffect : GameObject;
@@ -89,7 +89,7 @@ function ExplodeDir(dir : Vector3){
     var hit : RaycastHit;
     var colliders : Collider[];
     var fire: GameObject;
-    var ExplosionSphereRadius = 0.3;
+    var ExplosionSphereRadius = 0.45;
 	var FireLength = LinkedPlayer.GetComponent(PlayerBehaviour).Fire;         
     
     for (var i=1;i<=FireLength;i++){    	
