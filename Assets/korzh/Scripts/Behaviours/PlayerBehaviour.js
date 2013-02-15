@@ -17,7 +17,6 @@ var canJump = false;
 
 var DeathSound : AudioClip;
 var PlacedBombsList = Array();	
-var lastPlacedBombPos = Vector3.zero;
 
 public enum BonusType { 
 	Speed = 1,
@@ -73,13 +72,15 @@ function PlaceBomb(){
 				return;
 			}			
 		}   	
-		if (lastPlacedBombPos == newpos) {
+		
+		
+		if (PlacedBombsList.length > 0) 
+		if ((PlacedBombsList[PlacedBombsList.length-1] as GameObject).transform.position == newpos) {
 			Debug.Log("You have just placed a bomb there.");
 	    	return;
 		}
 		
 	    var boom = Network.Instantiate(goBomb, newpos, Quaternion.identity,1);
-		lastPlacedBombPos = newpos;	    
 	    boom.GetComponent(BombBehaviour).LinkPlayer(gameObject);
 	    PlacedBombsList.Add( boom );	    
     }

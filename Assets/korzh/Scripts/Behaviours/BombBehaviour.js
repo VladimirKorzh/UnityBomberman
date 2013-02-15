@@ -108,7 +108,7 @@ function ExplodeDir(dir : Vector3){
 	  		}
 	  		
 	  		if ( hit.collider.tag == "PowerUp") { 
-				Network.Destroy(hit.collider.gameObject);
+				hit.collider.gameObject.networkView.RPC("Explode", RPCMode.All);	
 	  		}  		
 	  		
 	  		if (hit.collider.tag == "Bomb"){	  			

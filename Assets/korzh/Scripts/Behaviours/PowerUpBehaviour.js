@@ -1,7 +1,8 @@
 #pragma strict
 //@script RequireComponent(AudioSource)
 
-var soundToPlay : AudioClip;
+var PickUpSound : AudioClip;
+var ExplodedSound : AudioClip;
 var Type : int;
 
 var SpeedMaterial : Material; 
@@ -28,6 +29,15 @@ function SetType(type:int) {
 
 }
 
+@RPC
+function Explode(){
+		
+	AudioSource.PlayClipAtPoint(ExplodedSound, transform.position);		
+
+	if (networkView.isMine) Network.Destroy(gameObject);
+}
+
+
 function OnTriggerEnter (other : Collider) {
 	if (other.tag == "Player"){
 		switch(Type) {
@@ -36,7 +46,7 @@ function OnTriggerEnter (other : Collider) {
 			case BonusType.Bomb:   other.GetComponent(PlayerBehaviour).PickUpBonus(3);      break;
 		}
 		
-		AudioSource.PlayClipAtPoint(soundToPlay, transform.position);		
+		AudioSource.PlayClipAtPoint(PickUpSound, transform.position);		
 		if (networkView.isMine) Network.Destroy(gameObject);
 		Debug.Log("powerup picked up: " + networkView.viewID + " type: " + Type);
 	}
