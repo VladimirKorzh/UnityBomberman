@@ -15,7 +15,7 @@ var Speed : float = 2.0f;
 var Bomb = 1;
 var canJump = false;
 
-
+var DeathSound : AudioClip;
 var PlacedBombsList = Array();	
 var lastPlacedBombPos = Vector3.zero;
 
@@ -99,6 +99,7 @@ function PlayAnimation(animationName : String){
 function Kill(){
 	isDead = true;
 	Debug.Log("Player died");
+	AudioSource.PlayClipAtPoint(DeathSound, transform.position);
 }
 
 

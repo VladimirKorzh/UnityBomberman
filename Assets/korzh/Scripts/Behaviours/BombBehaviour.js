@@ -5,15 +5,16 @@ var LerpTimer = 0.0f;
 var Exploded = false;
 var TimeToExplosion = 2.0f;
 var TimeToImpassable = 0.5;
-var BombExplosionPrefab          : GameObject;
-var BlockExplosionPrefab         : GameObject;
+//var BombExplosionPrefab          : GameObject; 
+var ExplosionSound : AudioClip;
 var ExplosionFlameParticleEffect : GameObject;
 var LinkedPlayer                 : GameObject;
 
 
 function Start(){
-	if (networkView.isMine) 
+	if (networkView.isMine) {
 		Debug.Log("I created bomb: " + networkView.viewID + " at: " + transform.position);	
+	}
 }
 
 function Update(){
@@ -53,6 +54,9 @@ function Explode(dir : Vector3){
 	//if (networkView.isMine && !Exploded){
 	if (networkView.isMine){
 			Exploded = true;
+			
+			AudioSource.PlayClipAtPoint(ExplosionSound, transform.position);
+			
 			Debug.Log("Explode in: " + networkView.viewID);
 			Debug.Log("Expl come from: " + dir);
 			
@@ -133,16 +137,7 @@ function ExplodeDir(dir : Vector3){
     	}
     }
 }    
-    
-    
-   
 
-@RPC
-function RPCDestroyBlock(pos:Vector3){
-	Debug.Log("explosion animation rcvd: " +  pos);	
-	var expl =  Instantiate(BlockExplosionPrefab, pos, Quaternion.identity);
-	Destroy(expl, 1);
-}
 
 @RPC
 function RPCSpawnFire(pos:Vector3){
