@@ -11,13 +11,13 @@ function Explode(){
 		var obj = Network.Instantiate(PowerUp, transform.position, transform.rotation,1);
 		var rnd = Random.value;
 		if (rnd < 0.3){
-			obj.networkView.RPC("SetType", RPCMode.All, 1);   	
+			obj.networkView.RPC("SetType", RPCMode.All, parseInt(BonusType.Speed) );   	
 		}
 		else if (rnd < 0.6){
-			obj.networkView.RPC("SetType", RPCMode.All, 2); 
+			obj.networkView.RPC("SetType", RPCMode.All, parseInt(BonusType.Fire)); 
 		}
 		else {
-			obj.networkView.RPC("SetType", RPCMode.All, 3); 
+			obj.networkView.RPC("SetType", RPCMode.All, parseInt(BonusType.Bomb)); 
 		}	
 	}
 }

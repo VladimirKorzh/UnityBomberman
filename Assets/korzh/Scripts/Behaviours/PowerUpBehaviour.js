@@ -8,12 +8,6 @@ var SpeedMaterial : Material;
 var FireMaterial  : Material; 
 var BombMaterial  : Material; 
 
-public enum PowerUp { 
-	Speed = 1,
-	Fire  = 2,
-	Bomb  = 3
-}
-
 function Start () {   
     transform.localPosition.y -= 0.3;
 }
@@ -24,11 +18,12 @@ function Update () {
 
 @RPC
 function SetType(type:int) { 
+	Debug.Log("PowerUp->SetType: " + type);
 	Type = type;
 	switch (Type) {
-			case PowerUp.Speed:  renderer.sharedMaterial = SpeedMaterial;  break;
-			case PowerUp.Fire:   renderer.sharedMaterial = FireMaterial;   break;
-			case PowerUp.Bomb:   renderer.sharedMaterial = BombMaterial;   break;
+			case BonusType.Speed:  renderer.sharedMaterial = SpeedMaterial;  break;
+			case BonusType.Fire:   renderer.sharedMaterial = FireMaterial;   break;
+			case BonusType.Bomb:   renderer.sharedMaterial = BombMaterial;   break;
 	}
 
 }
@@ -36,13 +31,13 @@ function SetType(type:int) {
 function OnTriggerEnter (other : Collider) {
 	if (other.tag == "Player"){
 		switch(Type) {
-			case PowerUp.Speed:  other.GetComponent(UserInterface).buffSpeedBuff();  break;
-			case PowerUp.Fire:   other.GetComponent(UserInterface).buffFireLength(); break;
-			case PowerUp.Bomb:   other.GetComponent(UserInterface).buffBombs();      break;
+			case BonusType.Speed:  other.GetComponent(PlayerBehaviour).PickUpBonus(1);  break;
+			case BonusType.Fire:   other.GetComponent(PlayerBehaviour).PickUpBonus(2); break;
+			case BonusType.Bomb:   other.GetComponent(PlayerBehaviour).PickUpBonus(3);      break;
 		}
 		
 		AudioSource.PlayClipAtPoint(soundToPlay, transform.position);		
 		if (networkView.isMine) Network.Destroy(gameObject);
-		Debug.Log("powerup pickedup " + networkView.viewID);
+		Debug.Log("powerup picked up: " + networkView.viewID + " type: " + Type);
 	}
 }

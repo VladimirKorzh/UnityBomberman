@@ -2,16 +2,16 @@
 
 var isDead = false;
 
-var maxBomb :int   = 5;
+var maxBomb  :int   = 5;
 var maxFire  :int   = 7;
-var maxSpeed :int   = 7;
+var maxSpeed :float   = 7;
 
 var SpeedBonusWeight :float = 0.5;
-var jumpSpeed : float = 8.0;
+var jumpSpeed : float = 8.0; 
 var gravity : float = 20.0;
 
 var Fire  = 1;
-var Speed = 2;
+var Speed : float = 2.0f;
 var Bomb = 1;
 var canJump = false;
 
@@ -29,7 +29,7 @@ public enum BonusType {
 var goBomb : GameObject;
 
 private var moveDirection : Vector3 = Vector3.zero;
-var controller : CharacterController;
+private var controller : CharacterController;
 
 function Start(){
 	if(networkView.isMine){ 
@@ -50,9 +50,10 @@ function Start(){
 function PickUpBonus(type: BonusType){
 	switch (type) {
 		case BonusType.Speed: if (Speed < maxSpeed) Speed+=SpeedBonusWeight; break;
-		case BonusType.Fire:  if (Fire < maxFire)  Fire+=1; break;
-		case BonusType.Bomb:  if (Bomb < maxBomb)  Bomb +=1;            	 break;
+		case BonusType.Fire:  if (Fire < maxFire)   Fire +=1;                break;
+		case BonusType.Bomb:  if (Bomb < maxBomb)   Bomb +=1;            	 break;
 	}
+	Debug.Log("Player now has -> S:"+Speed+" B:"+Bomb+" F:"+Fire);
 }
 
 function PlaceBomb(){
@@ -78,8 +79,15 @@ function PlayAnimation(animationName : String){
 	}
 }
 
+@RPC
+function Kill(){
+	isDead = true;
+	Debug.Log("Player died");
+}
 
-function UpdateMovement() {    
+
+
+function UpdateMovement() {   
     if (controller.isGrounded) {
         // We are grounded, so recalculate move direction directly from axes
         moveDirection = Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
@@ -102,42 +110,46 @@ function UpdateMovement() {
     
     // Move the controller
     controller.Move(moveDirection * Time.deltaTime);
-    
-
 }
 
 function UpdateAnimations(){
-	if (!controller.isGrounded) {
-		networkView.RPC("PlayAnimation", RPCMode.All, "jump");
-	} 
-	else	
-	{    
-    	if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0){
-    	
-			if ( Speed < 4) {		
-				networkView.RPC("PlayAnimation", RPCMode.All, "walk");
-			}
-			else 
-			{ 
-				networkView.RPC("PlayAnimation", RPCMode.All, "run");
-			}
-			
-    	} 
-    	else 
-    	{
-			networkView.RPC("PlayAnimation", RPCMode.All, "idle");
-		}	      	    
+	if (!isDead) { 
+		if (!controller.isGrounded) {
+			networkView.RPC("PlayAnimation", RPCMode.All, "jump");
+		} 
+		else	
+		{    
+	    	if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0){
+	    	
+				if ( Speed < 4) {		
+					networkView.RPC("PlayAnimation", RPCMode.All, "walk");
+				}
+				else 
+				{ 
+					networkView.RPC("PlayAnimation", RPCMode.All, "run");
+				}
+				
+	    	} 
+	    	else 
+	    	{
+				networkView.RPC("PlayAnimation", RPCMode.All, "idle");
+			}	      	    
+	    }
     }
+	else {
+		networkView.RPC("PlayAnimation", RPCMode.All, "death");
+	}
 }
 
 function UpdateControls(){
 	if (Input.GetKeyDown(KeyCode.Escape)) Application.Quit();
-	if (Input.GetKeyDown(KeyCode.E))      PlaceBomb();
+	if (Input.GetKeyDown(KeyCode.E) && !isDead)      PlaceBomb();
+	if (Input.GetKeyDown(KeyCode.Q))      isDead = false;
 
 }
 
 function Update(){
-	UpdateMovement();
+	if (!isDead) UpdateMovement();
 	UpdateAnimations();
 	UpdateControls();
 }
