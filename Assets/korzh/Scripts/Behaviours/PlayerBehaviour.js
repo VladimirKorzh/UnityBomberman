@@ -45,15 +45,12 @@ function Start(){
 	    Camera.mainCamera.transform.position.z = 5f;	    
 	    Camera.mainCamera.transform.LookAt(Vector3(7,1,5));
 
-	    
-
-	    	
 	   	// create an abstract color difference between players
-	    gameObject.Find("Ice Golem").renderer.material.color = Color.white;
+
 	    controller = GetComponent(CharacterController);
 	    
     }
-    else {
+    else {    
     	enabled = false;
     }
 }
@@ -215,3 +212,14 @@ function Kill(){
 	collider.enabled = false;
 }
 
+@RPC
+function Repaint(owner:NetworkPlayer){
+	var CharColors = new Color[4];
+	CharColors[0] = Color.white;
+	CharColors[1] = Color.red;
+	CharColors[2] = Color.green;
+	CharColors[3] = Color.black;
+
+    gameObject.GetComponentsInChildren(Renderer)[0].renderer.material.color = CharColors[parseInt(owner.ToString())];    
+
+}

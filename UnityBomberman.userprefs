@@ -15,10 +15,10 @@
             <Node name="Assets" expanded="True">
               <Node name="korzh" expanded="True">
                 <Node name="Scripts" expanded="True">
-                  <Node name="Behaviours" expanded="True" />
-                  <Node name="Managers" expanded="True">
-                    <Node name="GuiManager.js" selected="True" />
+                  <Node name="Behaviours" expanded="True">
+                    <Node name="PlayerBehaviour.js" selected="True" />
                   </Node>
+                  <Node name="Managers" expanded="True" />
                 </Node>
               </Node>
             </Node>

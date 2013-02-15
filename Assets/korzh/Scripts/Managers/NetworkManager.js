@@ -79,4 +79,5 @@ function OnFailedToConnectToMasterServer(){
 @RPC
 function SpawnYourself(pos: Vector3){
 	GetComponent(LevelManager).spawnPlayer(pos);
+	
 }

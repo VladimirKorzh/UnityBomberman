@@ -106,5 +106,5 @@ function CreateSpawnPos(pos: Vector3){
 
 
 function spawnPlayer(pos:Vector3){
-	Network.Instantiate(playerPrefab, pos, Quaternion.identity,0);
+	Network.Instantiate(playerPrefab, pos, Quaternion.identity,0).networkView.RPC("Repaint", RPCMode.AllBuffered, Network.player);
 }
