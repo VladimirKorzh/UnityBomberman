@@ -100,7 +100,8 @@ function PlayAnimation(animationName : String){
 function Kill(){
 	isDead = true;
 	Debug.Log("Player died");
-	AudioSource.PlayClipAtPoint(DeathSound, transform.position);
+	Camera.mainCamera.audio.Stop();
+	AudioSource.PlayClipAtPoint(DeathSound, transform.position);	
 }
 
 
