@@ -9,8 +9,8 @@ var spawnObject  : Transform;
 
 function CreateDebugLevel () {
 	
-	var Xnum : int = 21;
-	var Ynum : int = 21;	
+	var Xnum : int = 15;
+	var Ynum : int = 11;	
 	var newpos = Vector3(0,0,0);
 	
 	// layer one
