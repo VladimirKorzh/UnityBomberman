@@ -17,12 +17,55 @@ Platform assembly: C:\Users\Vladimir\Documents\UnityBomberman\Builds\win_linux_e
 Loading C:\Users\Vladimir\Documents\UnityBomberman\Builds\win_linux_executable_dev_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
 Platform assembly: C:\Users\Vladimir\Documents\UnityBomberman\Builds\win_linux_executable_dev_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
 Loading C:\Users\Vladimir\Documents\UnityBomberman\Builds\win_linux_executable_dev_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+- Completed reload, in  1.109 seconds
+desktop: 1366x768 60Hz; virtual: 2732x768 at -1366,0
+<RI> Initializing input.
+<RI> Input initialized.
+Platform assembly: C:\Users\Vladimir\Documents\UnityBomberman\Builds\win_linux_executable_dev_Data\Managed\UnityScript.Lang.dll (this message is harmless)
+Platform assembly: C:\Users\Vladimir\Documents\UnityBomberman\Builds\win_linux_executable_dev_Data\Managed\Boo.Lang.dll (this message is harmless)
+Initialize engine version: 4.0.0f7
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 9.0c [nvumdshim.dll 9.18.13.1090]
+    Renderer: NVIDIA GeForce GT 540M
+    Vendor:   NVIDIA
+    VRAM:     978 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 DF24=0 INTZ=1 RAWZ=0 NULL=1 RESZ=0 SlowINTZ=0
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Vladimir\Documents\UnityBomberman\Builds\win_linux_executable_dev_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Vladimir\Documents\UnityBomberman\Builds\win_linux_executable_dev_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Vladimir\Documents\UnityBomberman\Builds\win_linux_executable_dev_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Vladimir\Documents\UnityBomberman\Builds\win_linux_executable_dev_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Vladimir\Documents\UnityBomberman\Builds\win_linux_executable_dev_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Vladimir\Documents\UnityBomberman\Builds\win_linux_executable_dev_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Vladimir\Documents\UnityBomberman\Builds\win_linux_executable_dev_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
+Loading C:\Users\Vladimir\Documents\UnityBomberman\Builds\win_linux_executable_dev_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Vladimir\Documents\UnityBomberman\Builds\win_linux_executable_dev_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading C:\Users\Vladimir\Documents\UnityBomberman\Builds\win_linux_executable_dev_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
 - Completed reload, in  0.061 seconds
 desktop: 1366x768 60Hz; virtual: 2732x768 at -1366,0
 <RI> Initializing input.
 <RI> Input initialized.
 Platform assembly: C:\Users\Vladimir\Documents\UnityBomberman\Builds\win_linux_executable_dev_Data\Managed\UnityScript.Lang.dll (this message is harmless)
 Platform assembly: C:\Users\Vladimir\Documents\UnityBomberman\Builds\win_linux_executable_dev_Data\Managed\Boo.Lang.dll (this message is harmless)
+Server Initialized
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+NetworkManager:OnServerInitialized() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Managers\NetworkManager.js:35)
+UnityEngine.Network:InitializeServer(Int32, Int32, Boolean)
+NetworkManager:startServer() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Managers\NetworkManager.js:27)
+GuiManager:CreateNewServerScreen() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Managers\GuiManager.js:81)
+GuiManager:OnGUI() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Managers\GuiManager.js:101)
+ 
+(Filename: C Line: 0)
+
+Registered on Master Server
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+NetworkManager:OnMasterServerEvent(MasterServerEvent) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Managers\NetworkManager.js:71)
+ 
+(Filename: C Line: 0)
+
 Refreshing hostlist: TestBomberMan
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
@@ -38,7 +81,14 @@ GuiManager:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\
  
 (Filename: C Line: 0)
 
-I created bomb: AllocatedID: 51 at: (10.0, 0.9, 1.0)
+Player connected
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+NetworkManager:OnPlayerConnected() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Managers\NetworkManager.js:40)
+ 
+(Filename: C Line: 0)
+
+I created bomb: AllocatedID: 51 at: (13.0, 0.9, 5.0)
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 BombBehaviour:Start() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:16)
@@ -65,21 +115,21 @@ spawned powerup
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 WoodBlockBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\WoodBlockBehaviour.js:10)
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:98)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:71)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:102)
+BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:72)
 BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
  
 (Filename: C Line: 0)
 
-PowerUp->SetType: 2
+PowerUp->SetType: 3
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 PowerUpBehaviour:SetType(Int32) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PowerUpBehaviour.js:21)
 UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
 UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
-WoodBlockBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\WoodBlockBehaviour.js:17)
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:98)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:71)
+WoodBlockBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\WoodBlockBehaviour.js:20)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:102)
+BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:72)
 BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
  
 (Filename: C Line: 0)
@@ -88,21 +138,44 @@ spawned powerup
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 WoodBlockBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\WoodBlockBehaviour.js:10)
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:98)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:72)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:102)
+BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:74)
 BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
  
 (Filename: C Line: 0)
 
-PowerUp->SetType: 2
+PowerUp->SetType: 3
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 PowerUpBehaviour:SetType(Int32) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PowerUpBehaviour.js:21)
 UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
 UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
-WoodBlockBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\WoodBlockBehaviour.js:17)
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:98)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:72)
+WoodBlockBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\WoodBlockBehaviour.js:20)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:102)
+BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:74)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
+ 
+(Filename: C Line: 0)
+
+spawned powerup
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+WoodBlockBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\WoodBlockBehaviour.js:10)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:102)
+BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:75)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
+ 
+(Filename: C Line: 0)
+
+PowerUp->SetType: 1
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PowerUpBehaviour:SetType(Int32) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PowerUpBehaviour.js:21)
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+WoodBlockBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\WoodBlockBehaviour.js:14)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:102)
+BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:75)
 BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
  
 (Filename: C Line: 0)
@@ -110,94 +183,40 @@ BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\kor
 Bomb destroyed: AllocatedID: 51
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:80)
+BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:81)
 BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
  
 (Filename: C Line: 0)
 
-I created bomb: AllocatedID: 54 at: (8.0, 0.9, 1.0)
+PowerUp->SetType: 3
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
-BombBehaviour:Start() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:16)
+PowerUpBehaviour:SetType(Int32) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PowerUpBehaviour.js:21)
  
 (Filename: C Line: 0)
 
-Player now has -> S:2 B:1 F:2
+PowerUp->SetType: 3
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
-PlayerBehaviour:PickUpBonus(BonusType) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:56)
-PowerUpBehaviour:OnTriggerEnter(Collider) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PowerUpBehaviour.js:35)
+PowerUpBehaviour:SetType(Int32) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PowerUpBehaviour.js:21)
  
 (Filename: C Line: 0)
 
-powerup picked up: AllocatedID: 53 type: 2
+PowerUp->SetType: 1
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
-PowerUpBehaviour:OnTriggerEnter(Collider) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PowerUpBehaviour.js:41)
+PowerUpBehaviour:SetType(Int32) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PowerUpBehaviour.js:21)
  
 (Filename: C Line: 0)
 
-Player now has -> S:2 B:1 F:3
+Registered on Master Server
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
-PlayerBehaviour:PickUpBonus(BonusType) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:56)
-PowerUpBehaviour:OnTriggerEnter(Collider) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PowerUpBehaviour.js:35)
+NetworkManager:OnMasterServerEvent(MasterServerEvent) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Managers\NetworkManager.js:71)
  
 (Filename: C Line: 0)
 
-powerup picked up: AllocatedID: 52 type: 2
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-PowerUpBehaviour:OnTriggerEnter(Collider) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PowerUpBehaviour.js:41)
- 
-(Filename: C Line: 0)
-
-Explode in: AllocatedID: 54
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:56)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
- 
-(Filename: C Line: 0)
-
-Expl come from: (0.0, 0.0, 0.0)
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:57)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
- 
-(Filename: C Line: 0)
-
-Player got hit by bomb explosion
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:124)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:71)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
- 
-(Filename: C Line: 0)
-
-Player died
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-PlayerBehaviour:Kill() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:85)
-UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
-UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:125)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:71)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
- 
-(Filename: C Line: 0)
-
-Bomb destroyed: AllocatedID: 54
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:80)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
- 
-(Filename: C Line: 0)
-
-I created bomb: AllocatedID: 55 at: (11.0, 0.9, 1.0)
+I created bomb: AllocatedID: 55 at: (13.0, 0.9, 5.0)
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 BombBehaviour:Start() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:16)
@@ -220,60 +239,22 @@ BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\kor
  
 (Filename: C Line: 0)
 
-spawned powerup
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-WoodBlockBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\WoodBlockBehaviour.js:10)
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:98)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:73)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
- 
-(Filename: C Line: 0)
-
-PowerUp->SetType: 2
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-PowerUpBehaviour:SetType(Int32) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PowerUpBehaviour.js:21)
-UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
-UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
-WoodBlockBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\WoodBlockBehaviour.js:17)
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:98)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:73)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
- 
-(Filename: C Line: 0)
-
 Bomb destroyed: AllocatedID: 55
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:80)
+BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:81)
 BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
  
 (Filename: C Line: 0)
 
-Player now has -> S:2 B:1 F:4
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-PlayerBehaviour:PickUpBonus(BonusType) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:56)
-PowerUpBehaviour:OnTriggerEnter(Collider) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PowerUpBehaviour.js:35)
- 
-(Filename: C Line: 0)
-
-powerup picked up: AllocatedID: 56 type: 2
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-PowerUpBehaviour:OnTriggerEnter(Collider) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PowerUpBehaviour.js:41)
- 
-(Filename: C Line: 0)
-
-I created bomb: AllocatedID: 57 at: (11.0, 0.9, 1.0)
+I created bomb: AllocatedID: 56 at: (13.0, 0.9, 3.0)
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 BombBehaviour:Start() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:16)
  
 (Filename: C Line: 0)
 
-Explode in: AllocatedID: 57
+Explode in: AllocatedID: 56
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:56)
@@ -293,8 +274,8 @@ spawned powerup
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 WoodBlockBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\WoodBlockBehaviour.js:10)
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:98)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:71)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:102)
+BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:73)
 BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
  
 (Filename: C Line: 0)
@@ -306,8 +287,8 @@ PowerUpBehaviour:SetType(Int32) (at C:\Users\Vladimir\Documents\UnityBomberman\A
 UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
 UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
 WoodBlockBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\WoodBlockBehaviour.js:14)
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:98)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:71)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:102)
+BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:73)
 BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
  
 (Filename: C Line: 0)
@@ -316,8 +297,29 @@ spawned powerup
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 WoodBlockBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\WoodBlockBehaviour.js:10)
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:98)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:73)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:102)
+BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:75)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
+ 
+(Filename: C Line: 0)
+
+PowerUp->SetType: 3
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PowerUpBehaviour:SetType(Int32) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PowerUpBehaviour.js:21)
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+WoodBlockBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\WoodBlockBehaviour.js:20)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:102)
+BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:75)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
+ 
+(Filename: C Line: 0)
+
+Bomb destroyed: AllocatedID: 56
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:81)
 BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
  
 (Filename: C Line: 0)
@@ -326,31 +328,47 @@ PowerUp->SetType: 1
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 PowerUpBehaviour:SetType(Int32) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PowerUpBehaviour.js:21)
-UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
-UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
-WoodBlockBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\WoodBlockBehaviour.js:14)
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:98)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:73)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
  
 (Filename: C Line: 0)
 
-Bomb destroyed: AllocatedID: 57
+PowerUp->SetType: 3
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:80)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
+PowerUpBehaviour:SetType(Int32) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PowerUpBehaviour.js:21)
  
 (Filename: C Line: 0)
 
-I created bomb: AllocatedID: 60 at: (7.0, 0.9, 1.0)
+Player now has -> S:2 B:2 F:1
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
-BombBehaviour:Start() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:16)
+PlayerBehaviour:PickUpBonus(BonusType) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:56)
+PowerUpBehaviour:OnTriggerEnter(Collider) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PowerUpBehaviour.js:36)
  
 (Filename: C Line: 0)
 
-Player now has -> S:2.5 B:1 F:4
+powerup picked up: AllocatedID: 58 type: 3
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PowerUpBehaviour:OnTriggerEnter(Collider) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PowerUpBehaviour.js:41)
+ 
+(Filename: C Line: 0)
+
+Player now has -> S:2 B:2 F:1
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerBehaviour:PickUpBonus(BonusType) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:56)
+PowerUpBehaviour:OnTriggerEnter(Collider) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PowerUpBehaviour.js:36)
+ 
+(Filename: C Line: 0)
+
+powerup picked up: AllocatedID: 58 type: 3
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PowerUpBehaviour:OnTriggerEnter(Collider) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PowerUpBehaviour.js:41)
+ 
+(Filename: C Line: 0)
+
+Player now has -> S:2.5 B:2 F:1
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 PlayerBehaviour:PickUpBonus(BonusType) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:56)
@@ -358,10 +376,49 @@ PowerUpBehaviour:OnTriggerEnter(Collider) (at C:\Users\Vladimir\Documents\UnityB
  
 (Filename: C Line: 0)
 
-powerup picked up: AllocatedID: 58 type: 1
+powerup picked up: AllocatedID: 57 type: 1
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 PowerUpBehaviour:OnTriggerEnter(Collider) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PowerUpBehaviour.js:41)
+ 
+(Filename: C Line: 0)
+
+I created bomb: AllocatedID: 59 at: (13.0, 0.9, 3.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BombBehaviour:Start() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:16)
+ 
+(Filename: C Line: 0)
+
+I created bomb: AllocatedID: 60 at: (13.0, 0.9, 4.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BombBehaviour:Start() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:16)
+ 
+(Filename: C Line: 0)
+
+Explode in: AllocatedID: 59
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:56)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
+ 
+(Filename: C Line: 0)
+
+Expl come from: (0.0, 0.0, 0.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:57)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
+ 
+(Filename: C Line: 0)
+
+BOMB IS MINE: AllocatedID: 59 Target: AllocatedID: 60
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:112)
+BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:74)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
  
 (Filename: C Line: 0)
 
@@ -369,60 +426,18 @@ Explode in: AllocatedID: 60
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:56)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:113)
+BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:74)
 BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
  
 (Filename: C Line: 0)
 
-Expl come from: (0.0, 0.0, 0.0)
+Expl come from: (0.0, 0.0, 1.0)
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:57)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
- 
-(Filename: C Line: 0)
-
-spawned powerup
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-WoodBlockBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\WoodBlockBehaviour.js:10)
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:98)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:72)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
- 
-(Filename: C Line: 0)
-
-PowerUp->SetType: 3
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-PowerUpBehaviour:SetType(Int32) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PowerUpBehaviour.js:21)
-UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
-UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
-WoodBlockBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\WoodBlockBehaviour.js:20)
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:98)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:72)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
- 
-(Filename: C Line: 0)
-
-spawned powerup
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-WoodBlockBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\WoodBlockBehaviour.js:10)
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:98)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:73)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
- 
-(Filename: C Line: 0)
-
-PowerUp->SetType: 1
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-PowerUpBehaviour:SetType(Int32) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PowerUpBehaviour.js:21)
-UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
-UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
-WoodBlockBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\WoodBlockBehaviour.js:14)
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:98)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:73)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:113)
+BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:74)
 BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
  
 (Filename: C Line: 0)
@@ -430,30 +445,174 @@ BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\kor
 Bomb destroyed: AllocatedID: 60
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:80)
+BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:81)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:113)
+BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:74)
 BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
  
 (Filename: C Line: 0)
 
-I created bomb: AllocatedID: 63 at: (13.0, 0.9, 1.0)
+Bomb destroyed: AllocatedID: 59
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:81)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
+ 
+(Filename: C Line: 0)
+
+I created bomb: AllocatedID: 61 at: (13.0, 0.9, 3.0)
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 BombBehaviour:Start() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:16)
  
 (Filename: C Line: 0)
 
-Player now has -> S:3 B:1 F:4
+I created bomb: AllocatedID: 62 at: (13.0, 0.9, 4.0)
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
-PlayerBehaviour:PickUpBonus(BonusType) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:56)
-PowerUpBehaviour:OnTriggerEnter(Collider) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PowerUpBehaviour.js:34)
+BombBehaviour:Start() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:16)
  
 (Filename: C Line: 0)
 
-powerup picked up: AllocatedID: 59 type: 1
+Explode in: AllocatedID: 61
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
-PowerUpBehaviour:OnTriggerEnter(Collider) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PowerUpBehaviour.js:41)
+BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:56)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
+ 
+(Filename: C Line: 0)
+
+Expl come from: (0.0, 0.0, 0.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:57)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
+ 
+(Filename: C Line: 0)
+
+BOMB IS MINE: AllocatedID: 61 Target: AllocatedID: 62
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:112)
+BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:74)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
+ 
+(Filename: C Line: 0)
+
+Explode in: AllocatedID: 62
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:56)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:113)
+BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:74)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
+ 
+(Filename: C Line: 0)
+
+Expl come from: (0.0, 0.0, 1.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:57)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:113)
+BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:74)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
+ 
+(Filename: C Line: 0)
+
+Player got hit by bomb explosion
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:129)
+BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:74)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:113)
+BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:74)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
+ 
+(Filename: C Line: 0)
+
+Player died
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerBehaviour:Kill() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:85)
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:130)
+BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:74)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:113)
+BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:74)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
+ 
+(Filename: C Line: 0)
+
+Bomb destroyed: AllocatedID: 62
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:81)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:113)
+BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:74)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
+ 
+(Filename: C Line: 0)
+
+Bomb destroyed: AllocatedID: 61
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:81)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
+ 
+(Filename: C Line: 0)
+
+Player died
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerBehaviour:Kill() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:85)
+ 
+(Filename: C Line: 0)
+
+I created bomb: AllocatedID: 873 at: (13.0, 0.9, 3.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BombBehaviour:Start() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:16)
+ 
+(Filename: C Line: 0)
+
+I created bomb: AllocatedID: 63 at: (13.0, 0.9, 4.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BombBehaviour:Start() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:16)
+ 
+(Filename: C Line: 0)
+
+Explode in: AllocatedID: 873
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:56)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
+ 
+(Filename: C Line: 0)
+
+Expl come from: (0.0, 0.0, 0.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:57)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
+ 
+(Filename: C Line: 0)
+
+BOMB NOT MINE: AllocatedID: 873 Target: AllocatedID: 63
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:116)
+BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:74)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
+ 
+(Filename: C Line: 0)
+
+Bomb destroyed: AllocatedID: 873
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:81)
+BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
  
 (Filename: C Line: 0)
 
@@ -461,140 +620,31 @@ Explode in: AllocatedID: 63
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:56)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
  
 (Filename: C Line: 0)
 
-Expl come from: (0.0, 0.0, 0.0)
+Expl come from: (0.0, 0.0, 1.0)
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:57)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
- 
-(Filename: C Line: 0)
-
-spawned powerup
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-WoodBlockBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\WoodBlockBehaviour.js:10)
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:98)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:71)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
- 
-(Filename: C Line: 0)
-
-PowerUp->SetType: 1
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-PowerUpBehaviour:SetType(Int32) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PowerUpBehaviour.js:21)
-UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
-UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
-WoodBlockBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\WoodBlockBehaviour.js:14)
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:98)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:71)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
- 
-(Filename: C Line: 0)
-
-spawned powerup
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-WoodBlockBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\WoodBlockBehaviour.js:10)
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:98)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:73)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
- 
-(Filename: C Line: 0)
-
-PowerUp->SetType: 2
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-PowerUpBehaviour:SetType(Int32) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PowerUpBehaviour.js:21)
-UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
-UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
-WoodBlockBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\WoodBlockBehaviour.js:17)
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:98)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:73)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
  
 (Filename: C Line: 0)
 
 Bomb destroyed: AllocatedID: 63
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:80)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
+BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:81)
  
 (Filename: C Line: 0)
 
-Player now has -> S:3 B:2 F:4
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-PlayerBehaviour:PickUpBonus(BonusType) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:56)
-PowerUpBehaviour:OnTriggerEnter(Collider) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PowerUpBehaviour.js:36)
- 
-(Filename: C Line: 0)
-
-powerup picked up: AllocatedID: 61 type: 3
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-PowerUpBehaviour:OnTriggerEnter(Collider) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PowerUpBehaviour.js:41)
- 
-(Filename: C Line: 0)
-
-Player now has -> S:3.5 B:2 F:4
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-PlayerBehaviour:PickUpBonus(BonusType) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:56)
-PowerUpBehaviour:OnTriggerEnter(Collider) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PowerUpBehaviour.js:34)
- 
-(Filename: C Line: 0)
-
-powerup picked up: AllocatedID: 62 type: 1
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-PowerUpBehaviour:OnTriggerEnter(Collider) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PowerUpBehaviour.js:41)
- 
-(Filename: C Line: 0)
-
-Player now has -> S:4 B:2 F:4
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-PlayerBehaviour:PickUpBonus(BonusType) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:56)
-PowerUpBehaviour:OnTriggerEnter(Collider) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PowerUpBehaviour.js:34)
- 
-(Filename: C Line: 0)
-
-powerup picked up: AllocatedID: 64 type: 1
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-PowerUpBehaviour:OnTriggerEnter(Collider) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PowerUpBehaviour.js:41)
- 
-(Filename: C Line: 0)
-
-Player now has -> S:4 B:2 F:5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-PlayerBehaviour:PickUpBonus(BonusType) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:56)
-PowerUpBehaviour:OnTriggerEnter(Collider) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PowerUpBehaviour.js:35)
- 
-(Filename: C Line: 0)
-
-powerup picked up: AllocatedID: 65 type: 2
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-PowerUpBehaviour:OnTriggerEnter(Collider) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PowerUpBehaviour.js:41)
- 
-(Filename: C Line: 0)
-
-I created bomb: AllocatedID: 66 at: (13.0, 0.9, 1.0)
+I created bomb: AllocatedID: 64 at: (13.0, 0.9, 4.0)
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 BombBehaviour:Start() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:16)
  
 (Filename: C Line: 0)
 
-Explode in: AllocatedID: 66
+Explode in: AllocatedID: 64
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:56)
@@ -610,539 +660,772 @@ BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\kor
  
 (Filename: C Line: 0)
 
-Player got hit by bomb explosion
+Bomb destroyed: AllocatedID: 64
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:124)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:72)
+BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:81)
 BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
  
 (Filename: C Line: 0)
 
-Player died
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-PlayerBehaviour:Kill() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:85)
+Couldn't send RPC function 'PlayAnimation' to server
+
 UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
 UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:125)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:72)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
- 
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
 (Filename: C Line: 0)
 
-spawned powerup
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-WoodBlockBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\WoodBlockBehaviour.js:10)
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:98)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:73)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
+The server has disconnected from the client. Most likely the server has shut down.
  
-(Filename: C Line: 0)
+(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp Line: 742)
 
-PowerUp->SetType: 3
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-PowerUpBehaviour:SetType(Int32) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PowerUpBehaviour.js:21)
+Can't send RPC function since no connection was started.
 UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
 UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
-WoodBlockBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\WoodBlockBehaviour.js:20)
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:98)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:73)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
- 
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
 (Filename: C Line: 0)
 
-Bomb destroyed: AllocatedID: 66
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:80)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
- 
-(Filename: C Line: 0)
-
-Player now has -> S:4 B:3 F:5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-PlayerBehaviour:PickUpBonus(BonusType) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:56)
-PowerUpBehaviour:OnTriggerEnter(Collider) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PowerUpBehaviour.js:36)
- 
-(Filename: C Line: 0)
-
-powerup picked up: AllocatedID: 67 type: 3
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-PowerUpBehaviour:OnTriggerEnter(Collider) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PowerUpBehaviour.js:41)
- 
-(Filename: C Line: 0)
-
-I created bomb: AllocatedID: 68 at: (17.0, 0.9, 1.0)
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BombBehaviour:Start() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:16)
- 
-(Filename: C Line: 0)
-
-I created bomb: AllocatedID: 69 at: (15.0, 0.9, 1.0)
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BombBehaviour:Start() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:16)
- 
-(Filename: C Line: 0)
-
-Explode in: AllocatedID: 68
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:56)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
- 
-(Filename: C Line: 0)
-
-Expl come from: (0.0, 0.0, 0.0)
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:57)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
- 
-(Filename: C Line: 0)
-
-spawned powerup
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-WoodBlockBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\WoodBlockBehaviour.js:10)
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:98)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:71)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
- 
-(Filename: C Line: 0)
-
-PowerUp->SetType: 3
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-PowerUpBehaviour:SetType(Int32) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PowerUpBehaviour.js:21)
+Can't send RPC function since no connection was started.
 UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
 UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
-WoodBlockBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\WoodBlockBehaviour.js:20)
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:98)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:71)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
- 
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
 (Filename: C Line: 0)
 
-BOMB IS MINE: AllocatedID: 68 Target: AllocatedID: 69
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:108)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:72)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
- 
-(Filename: C Line: 0)
-
-Explode in: AllocatedID: 69
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:56)
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:109)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:72)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
- 
-(Filename: C Line: 0)
-
-Expl come from: (-1.0, 0.0, 0.0)
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:57)
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:109)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:72)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
- 
-(Filename: C Line: 0)
-
-Bomb destroyed: AllocatedID: 69
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:80)
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:109)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:72)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
- 
-(Filename: C Line: 0)
-
-spawned powerup
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-WoodBlockBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\WoodBlockBehaviour.js:10)
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:98)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:73)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
- 
-(Filename: C Line: 0)
-
-PowerUp->SetType: 1
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-PowerUpBehaviour:SetType(Int32) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PowerUpBehaviour.js:21)
+Can't send RPC function since no connection was started.
 UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
 UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
-WoodBlockBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\WoodBlockBehaviour.js:14)
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:98)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:73)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
- 
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
 (Filename: C Line: 0)
 
-Bomb destroyed: AllocatedID: 68
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:80)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
- 
-(Filename: C Line: 0)
-
-Player now has -> S:4.5 B:3 F:5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-PlayerBehaviour:PickUpBonus(BonusType) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:56)
-PowerUpBehaviour:OnTriggerEnter(Collider) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PowerUpBehaviour.js:34)
- 
-(Filename: C Line: 0)
-
-powerup picked up: AllocatedID: 71 type: 1
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-PowerUpBehaviour:OnTriggerEnter(Collider) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PowerUpBehaviour.js:41)
- 
-(Filename: C Line: 0)
-
-Player now has -> S:4.5 B:4 F:5
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-PlayerBehaviour:PickUpBonus(BonusType) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:56)
-PowerUpBehaviour:OnTriggerEnter(Collider) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PowerUpBehaviour.js:36)
- 
-(Filename: C Line: 0)
-
-powerup picked up: AllocatedID: 70 type: 3
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-PowerUpBehaviour:OnTriggerEnter(Collider) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PowerUpBehaviour.js:41)
- 
-(Filename: C Line: 0)
-
-I created bomb: AllocatedID: 72 at: (13.0, 0.9, 1.0)
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BombBehaviour:Start() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:16)
- 
-(Filename: C Line: 0)
-
-Explode in: AllocatedID: 72
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:56)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
- 
-(Filename: C Line: 0)
-
-Expl come from: (0.0, 0.0, 0.0)
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:57)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
- 
-(Filename: C Line: 0)
-
-BOMB NOT MINE: AllocatedID: 72 Target: AllocatedID: 869
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:112)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:72)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
- 
-(Filename: C Line: 0)
-
-Player got hit by bomb explosion
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:124)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:73)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
- 
-(Filename: C Line: 0)
-
-Player died
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-PlayerBehaviour:Kill() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:85)
+Can't send RPC function since no connection was started.
 UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
 UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:125)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:73)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
- 
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
 (Filename: C Line: 0)
 
-spawned powerup
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-WoodBlockBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\WoodBlockBehaviour.js:10)
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:98)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:73)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
- 
-(Filename: C Line: 0)
-
-PowerUp->SetType: 1
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-PowerUpBehaviour:SetType(Int32) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PowerUpBehaviour.js:21)
+Can't send RPC function since no connection was started.
 UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
 UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
-WoodBlockBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\WoodBlockBehaviour.js:14)
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:98)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:73)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
- 
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
 (Filename: C Line: 0)
 
-Bomb destroyed: AllocatedID: 72
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:80)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
- 
-(Filename: C Line: 0)
-
-Player died
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-PlayerBehaviour:Kill() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:85)
- 
-(Filename: C Line: 0)
-
-I created bomb: AllocatedID: 74 at: (13.0, 0.9, 4.0)
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BombBehaviour:Start() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:16)
- 
-(Filename: C Line: 0)
-
-Explode in: AllocatedID: 74
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:56)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
- 
-(Filename: C Line: 0)
-
-Expl come from: (0.0, 0.0, 0.0)
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:57)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
- 
-(Filename: C Line: 0)
-
-Player got hit by bomb explosion
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:124)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:73)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
- 
-(Filename: C Line: 0)
-
-Player died
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-PlayerBehaviour:Kill() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:85)
+Can't send RPC function since no connection was started.
 UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
 UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:125)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:73)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
- 
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
 (Filename: C Line: 0)
 
-spawned powerup
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-WoodBlockBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\WoodBlockBehaviour.js:10)
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:98)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:73)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
- 
-(Filename: C Line: 0)
-
-PowerUp->SetType: 2
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-PowerUpBehaviour:SetType(Int32) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PowerUpBehaviour.js:21)
+Can't send RPC function since no connection was started.
 UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
 UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
-WoodBlockBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\WoodBlockBehaviour.js:17)
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:98)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:73)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
- 
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
 (Filename: C Line: 0)
 
-Bomb destroyed: AllocatedID: 74
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:80)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
- 
-(Filename: C Line: 0)
-
-I created bomb: AllocatedID: 76 at: (13.0, 0.9, 4.0)
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BombBehaviour:Start() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:16)
- 
-(Filename: C Line: 0)
-
-Explode in: AllocatedID: 76
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:56)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
- 
-(Filename: C Line: 0)
-
-Expl come from: (0.0, 0.0, 0.0)
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:57)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
- 
-(Filename: C Line: 0)
-
-Player got hit by bomb explosion
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:124)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:73)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
- 
-(Filename: C Line: 0)
-
-Player died
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-PlayerBehaviour:Kill() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:85)
+Can't send RPC function since no connection was started.
 UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
 UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:125)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:73)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
- 
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
 (Filename: C Line: 0)
 
-spawned powerup
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-WoodBlockBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\WoodBlockBehaviour.js:10)
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:98)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:73)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
- 
-(Filename: C Line: 0)
-
-PowerUp->SetType: 3
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-PowerUpBehaviour:SetType(Int32) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PowerUpBehaviour.js:21)
+Can't send RPC function since no connection was started.
 UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
 UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
-WoodBlockBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\WoodBlockBehaviour.js:20)
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:98)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:73)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
- 
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
 (Filename: C Line: 0)
 
-Bomb destroyed: AllocatedID: 76
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:80)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
- 
-(Filename: C Line: 0)
-
-I created bomb: AllocatedID: 78 at: (13.0, 0.9, 5.0)
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BombBehaviour:Start() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:16)
- 
-(Filename: C Line: 0)
-
-Explode in: AllocatedID: 78
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:56)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
- 
-(Filename: C Line: 0)
-
-Expl come from: (0.0, 0.0, 0.0)
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:57)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
- 
-(Filename: C Line: 0)
-
-Player got hit by bomb explosion
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:124)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:71)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
- 
-(Filename: C Line: 0)
-
-Player died
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-PlayerBehaviour:Kill() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:85)
+Can't send RPC function since no connection was started.
 UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
 UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:125)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:71)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
- 
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
 (Filename: C Line: 0)
 
-spawned powerup
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-WoodBlockBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\WoodBlockBehaviour.js:10)
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:98)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:71)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
- 
-(Filename: C Line: 0)
-
-PowerUp->SetType: 1
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-PowerUpBehaviour:SetType(Int32) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PowerUpBehaviour.js:21)
+Can't send RPC function since no connection was started.
 UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
 UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
-WoodBlockBehaviour:Explode() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\WoodBlockBehaviour.js:14)
-BombBehaviour:ExplodeDir(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:98)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:71)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
- 
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
 (Filename: C Line: 0)
 
-Bomb destroyed: AllocatedID: 78
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-BombBehaviour:Explode(Vector3) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:80)
-BombBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\BombBehaviour.js:24)
- 
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Can't send RPC function since no connection was started.
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:135)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:153)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
 (Filename: C Line: 0)
 

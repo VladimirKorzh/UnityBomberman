@@ -57,9 +57,10 @@ function Explode(dir : Vector3){
 			Debug.Log("Expl come from: " + dir);
 			
      		LinkedPlayer.GetComponent(PlayerBehaviour).PlacedBombsList.Remove( gameObject );
-    		networkView.RPC("RPCSpawnFire", RPCMode.All, transform.position);  
     		 		        	    
 			//explode self
+    		networkView.RPC("RPCSpawnFire", RPCMode.All, transform.position);  
+			
 			var selfCollision = Physics.OverlapSphere(transform.position,0.3,(1 << 9));
 			for (var i=0;i<selfCollision.Length;i++){
 				if (selfCollision[i].collider.tag == "Player"){
@@ -88,12 +89,15 @@ function ExplodeDir(dir : Vector3){
     var hit : RaycastHit;
     var colliders : Collider[];
     var fire: GameObject;
+    var ExplosionSphereRadius = 0.3;
 	var FireLength = LinkedPlayer.GetComponent(PlayerBehaviour).Fire;         
     
-    for (var i=1;i<=FireLength;i++){
-    	networkView.RPC("RPCSpawnFire", RPCMode.All, transform.position+dir*i);   			
+    for (var i=1;i<=FireLength;i++){    	
     	if (Physics.Linecast(transform.position, transform.position+dir*i,hit, (1 << 8))) {    
+    		if (hit.collider.tag == "StoneBlock") break;
     		
+    		networkView.RPC("RPCSpawnFire", RPCMode.All, transform.position+dir*i);   
+    			
 	  		if (hit.collider.tag == "WoodBlock") {
 			    hit.collider.gameObject.GetComponent(WoodBlockBehaviour).Explode();	 
 				Network.Destroy(hit.collider.gameObject);
@@ -113,11 +117,12 @@ function ExplodeDir(dir : Vector3){
 	  				hit.collider.gameObject.networkView.RPC("Explode", RPCMode.All, dir);		
 	  				}
 	  		}	 
-	  		
+	  				
     		break;
     	}
     	else {
-    		colliders = Physics.OverlapSphere(transform.position+dir*i,0.3, (1 << 9) ) ;
+    		colliders = Physics.OverlapSphere(transform.position+dir*i,ExplosionSphereRadius, (1 << 9) ) ;
+    		networkView.RPC("RPCSpawnFire", RPCMode.All, transform.position+dir*i);   	
     		
 			for (var j=0;j<colliders.Length;j++){				
 				if (colliders[j].collider.tag == "Player"){
