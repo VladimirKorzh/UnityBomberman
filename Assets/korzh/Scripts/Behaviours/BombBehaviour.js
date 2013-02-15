@@ -5,9 +5,6 @@ var LerpTimer = 0.0f;
 var Exploded = false;
 var TimeToExplosion = 2.0f;
 var TimeToImpassable = 0.5;
-//var BombExplosionPrefab          : GameObject; 
-var ExplosionSound : AudioClip;
-var ExplosionFlameParticleEffect : GameObject;
 var LinkedPlayer                 : GameObject;
 
 
@@ -51,19 +48,18 @@ function LinkPlayer(Player: GameObject){
 
 @RPC
 function Explode(dir : Vector3){
-	//if (networkView.isMine && !Exploded){
+
 	if (networkView.isMine){
 			Exploded = true;
-			
-			AudioSource.PlayClipAtPoint(ExplosionSound, transform.position);
-			
+						
 			Debug.Log("Explode in: " + networkView.viewID);
 			Debug.Log("Expl come from: " + dir);
 			
      		LinkedPlayer.GetComponent(PlayerBehaviour).PlacedBombsList.Remove( gameObject );
     		 		        	    
 			//explode self
-    		networkView.RPC("RPCSpawnFire", RPCMode.All, transform.position);  
+    		LinkedPlayer.networkView.RPC("SpawnAnimationAtPos", RPCMode.All, "Fire", transform.position);  
+    		LinkedPlayer.networkView.RPC("PlaySoundEffectAtPos", RPCMode.All, "ExplosionSound", transform.position);  
 			
 			var selfCollision = Physics.OverlapSphere(transform.position,0.3,(1 << 9));
 			for (var i=0;i<selfCollision.Length;i++){
@@ -100,7 +96,7 @@ function ExplodeDir(dir : Vector3){
     	if (Physics.Linecast(transform.position, transform.position+dir*i,hit, (1 << 8))) {    
     		if (hit.collider.tag == "StoneBlock") break;
     		
-    		networkView.RPC("RPCSpawnFire", RPCMode.All, transform.position+dir*i);   
+    		LinkedPlayer.networkView.RPC("SpawnAnimationAtPos", RPCMode.All, "Fire", transform.position+dir*i);   
     			
 	  		if (hit.collider.tag == "WoodBlock") {
 			    hit.collider.gameObject.GetComponent(WoodBlockBehaviour).Explode();	 
@@ -108,7 +104,7 @@ function ExplodeDir(dir : Vector3){
 	  		}
 	  		
 	  		if ( hit.collider.tag == "PowerUp") { 
-				hit.collider.gameObject.networkView.RPC("Explode", RPCMode.All);	
+				Network.Destroy(hit.collider.gameObject);	
 	  		}  		
 	  		
 	  		if (hit.collider.tag == "Bomb"){	  			
@@ -126,7 +122,7 @@ function ExplodeDir(dir : Vector3){
     	}
     	else {
     		colliders = Physics.OverlapSphere(transform.position+dir*i,ExplosionSphereRadius, (1 << 9) ) ;
-    		networkView.RPC("RPCSpawnFire", RPCMode.All, transform.position+dir*i);   	
+    		LinkedPlayer.networkView.RPC("SpawnAnimationAtPos", RPCMode.All, "Fire", transform.position+dir*i);   
     		
 			for (var j=0;j<colliders.Length;j++){				
 				if (colliders[j].collider.tag == "Player"){
@@ -139,9 +135,4 @@ function ExplodeDir(dir : Vector3){
 }    
 
 
-@RPC
-function RPCSpawnFire(pos:Vector3){
-//	Debug.Log("fire animation rcvd");	
-	var fire = Instantiate(ExplosionFlameParticleEffect, pos,Quaternion.identity);
-	Destroy(fire, 1);
-}
+

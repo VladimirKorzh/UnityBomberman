@@ -30,6 +30,12 @@ var goBomb : GameObject;
 private var moveDirection : Vector3 = Vector3.zero;
 private var controller : CharacterController;
 
+var ExplosionSound : AudioClip;
+var ExplosionFlameParticleEffect : GameObject;
+
+var PickUpSounds : AudioClip[];
+
+
 function Start(){
 	if(networkView.isMine){ 
 		// set the camera to follow this object
@@ -81,28 +87,14 @@ function PlaceBomb(){
 		}
 		
 	    var boom = Network.Instantiate(goBomb, newpos, Quaternion.identity,1);
+	    //testing
+	    networkView.RPC("PlaySoundEffectAtPos", RPCMode.All, "PickUpSound", transform.position);
+	    
 	    boom.GetComponent(BombBehaviour).LinkPlayer(gameObject);
 	    PlacedBombsList.Add( boom );	    
     }
 }
 	
-@RPC
-function PlayAnimation(animationName : String){
-	animation.CrossFade(animationName);
-	if (animationName == "death")
-		animation.wrapMode = WrapMode.ClampForever;
-	else {
-		animation.wrapMode = WrapMode.Loop;
-	}
-}
-
-@RPC
-function Kill(){
-	isDead = true;
-	Debug.Log("Player died");
-	Camera.mainCamera.audio.Stop();
-	AudioSource.PlayClipAtPoint(DeathSound, transform.position);	
-}
 
 
 
@@ -134,29 +126,29 @@ function UpdateMovement() {
 function UpdateAnimations(){
 	if (!isDead) { 
 		if (!controller.isGrounded) {
-			networkView.RPC("PlayAnimation", RPCMode.All, "jump");
+			networkView.RPC("PlayMovementAnimation", RPCMode.All, "jump");
 		} 
 		else	
 		{    
 	    	if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0){
 	    	
 				if ( Speed < 4) {		
-					networkView.RPC("PlayAnimation", RPCMode.All, "walk");
+					networkView.RPC("PlayMovementAnimation", RPCMode.All, "walk");
 				}
 				else 
 				{ 
-					networkView.RPC("PlayAnimation", RPCMode.All, "run");
+					networkView.RPC("PlayMovementAnimation", RPCMode.All, "run");
 				}
 				
 	    	} 
 	    	else 
 	    	{
-				networkView.RPC("PlayAnimation", RPCMode.All, "idle");
+				networkView.RPC("PlayMovementAnimation", RPCMode.All, "idle");
 			}	      	    
 	    }
     }
 	else {
-		networkView.RPC("PlayAnimation", RPCMode.All, "death");
+		networkView.RPC("PlayMovementAnimation", RPCMode.All, "death");
 	}
 }
 
@@ -176,6 +168,42 @@ function Update(){
 
 
 
+@RPC
+function SpawnAnimationAtPos(which:String, pos:Vector3){
+	switch(which){
+		case "Fire": 
+			var fire = Instantiate(ExplosionFlameParticleEffect, pos,Quaternion.identity);
+			Destroy(fire, 1);
+			break;
+	}
+}
 
+@RPC
+function PlaySoundEffectAtPos(which:String, pos:Vector3){
+	switch(which){
+		case "ExplosionSound": 
+			AudioSource.PlayClipAtPoint(ExplosionSound, pos);
+			break;
+		case "PickUpSound":
+			AudioSource.PlayClipAtPoint(PickUpSounds[Random.Range(0,PickUpSounds.Length)], pos);	
+			break;
+	}
+}
 
+@RPC
+function PlayMovementAnimation(animationName : String){
+	animation.CrossFade(animationName);
+	if (animationName == "death")
+		animation.wrapMode = WrapMode.ClampForever;
+	else {
+		animation.wrapMode = WrapMode.Loop;
+	}
+}
 
+@RPC
+function Kill(){
+	isDead = true;
+	Debug.Log("Player died");
+	Camera.mainCamera.audio.Stop();
+	AudioSource.PlayClipAtPoint(DeathSound, transform.position);	
+}
