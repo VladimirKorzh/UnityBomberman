@@ -4,13 +4,20 @@
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
+          <Node name="Assembly-CSharp-firstpass" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Standard Assets" expanded="True">
+                <Node name="Image Effects (Pro Only)" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
           <Node name="Assembly-UnityScript" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="korzh" expanded="True">
                 <Node name="Scripts" expanded="True">
                   <Node name="Behaviours" expanded="True" />
                   <Node name="Managers" expanded="True">
-                    <Node name="NetworkManager.js" selected="True" />
+                    <Node name="GuiManager.js" selected="True" />
                   </Node>
                 </Node>
               </Node>

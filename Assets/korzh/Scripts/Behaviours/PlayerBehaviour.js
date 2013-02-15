@@ -40,6 +40,13 @@ function Start(){
 	if(networkView.isMine){ 
 		// set the camera to follow this object
 	    Camera.mainCamera.GetComponent(SmoothFollow).target = gameObject.transform;
+	    Camera.mainCamera.transform.position.x = 7f;
+	    Camera.mainCamera.transform.position.y = 10.77f;
+	    Camera.mainCamera.transform.position.z = 5f;	    
+	    Camera.mainCamera.transform.LookAt(Vector3(7,1,5));
+
+	    
+
 	    	
 	   	// create an abstract color difference between players
 	    gameObject.Find("Ice Golem").renderer.material.color = Color.white;
@@ -111,9 +118,9 @@ function UpdateMovement() {
         
         moveDirection *= Speed;
         
-        if (Input.GetButton ("Jump")) {
-            moveDirection.y = jumpSpeed;
-        }
+//        if (Input.GetButton ("Jump")) {
+//            moveDirection.y = jumpSpeed;
+//        }
     }
 
     // Apply gravity
@@ -155,8 +162,7 @@ function UpdateAnimations(){
 function UpdateControls(){
 	if (Input.GetKeyDown(KeyCode.Escape)) Application.Quit();
 	if (Input.GetKeyDown(KeyCode.E) && !isDead)      PlaceBomb();
-	if (Input.GetKeyDown(KeyCode.Q))      isDead = false;
-
+	if (Input.GetKeyDown(KeyCode.Q)) { collider.enabled = true;     isDead = false; }
 }
 
 function Update(){
@@ -206,4 +212,6 @@ function Kill(){
 	Debug.Log("Player died");
 	Camera.mainCamera.audio.Stop();
 	AudioSource.PlayClipAtPoint(DeathSound, transform.position);	
+	collider.enabled = false;
 }
+
