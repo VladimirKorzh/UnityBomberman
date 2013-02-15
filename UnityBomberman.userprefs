@@ -3,7 +3,20 @@
   <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
-        <State expanded="True" />
+        <State expanded="True">
+          <Node name="Assembly-UnityScript" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="korzh" expanded="True">
+                <Node name="Scripts" expanded="True">
+                  <Node name="Behaviours" expanded="True" />
+                  <Node name="Managers" expanded="True">
+                    <Node name="NetworkManager.js" selected="True" />
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>

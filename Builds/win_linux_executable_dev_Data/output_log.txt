@@ -17,7 +17,76 @@ Platform assembly: C:\Users\Vladimir\Documents\UnityBomberman\Builds\win_linux_e
 Loading C:\Users\Vladimir\Documents\UnityBomberman\Builds\win_linux_executable_dev_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
 Platform assembly: C:\Users\Vladimir\Documents\UnityBomberman\Builds\win_linux_executable_dev_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
 Loading C:\Users\Vladimir\Documents\UnityBomberman\Builds\win_linux_executable_dev_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
-- Completed reload, in  0.071 seconds
+- Completed reload, in  1.809 seconds
 desktop: 1366x768 60Hz; virtual: 2732x768 at -1366,0
 <RI> Initializing input.
 <RI> Input initialized.
+Platform assembly: C:\Users\Vladimir\Documents\UnityBomberman\Builds\win_linux_executable_dev_Data\Managed\UnityScript.Lang.dll (this message is harmless)
+Platform assembly: C:\Users\Vladimir\Documents\UnityBomberman\Builds\win_linux_executable_dev_Data\Managed\Boo.Lang.dll (this message is harmless)
+Server Initialized. my playerID: 0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+NetworkManager:OnServerInitialized() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Managers\NetworkManager.js:31)
+UnityEngine.Network:InitializeServer(Int32, Int32, Boolean)
+NetworkManager:startServer() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Managers\NetworkManager.js:23)
+GuiManager:CreateNewServerScreen() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Managers\GuiManager.js:81)
+GuiManager:OnGUI() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Managers\GuiManager.js:101)
+ 
+(Filename: C Line: 0)
+
+Level Created
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+NetworkManager:OnServerInitialized() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Managers\NetworkManager.js:36)
+UnityEngine.Network:InitializeServer(Int32, Int32, Boolean)
+NetworkManager:startServer() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Managers\NetworkManager.js:23)
+GuiManager:CreateNewServerScreen() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Managers\GuiManager.js:81)
+GuiManager:OnGUI() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Managers\GuiManager.js:101)
+ 
+(Filename: C Line: 0)
+
+Registered on Master Server
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+NetworkManager:OnMasterServerEvent(MasterServerEvent) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Managers\NetworkManager.js:70)
+ 
+(Filename: C Line: 0)
+
+Player connected 1
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+NetworkManager:OnPlayerConnected(NetworkPlayer) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Managers\NetworkManager.js:41)
+ 
+(Filename: C Line: 0)
+
+Registered on Master Server
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+NetworkManager:OnMasterServerEvent(MasterServerEvent) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Managers\NetworkManager.js:70)
+ 
+(Filename: C Line: 0)
+
+Couldn't send RPC function 'PlayMovementAnimation'
+
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
+PlayerBehaviour:UpdateAnimations() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:146)
+PlayerBehaviour:Update() (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js:164)
+
+[C:/BuildAgent/work/812c4f5049264fad/Runtime/Network/NetworkManager.cpp line 2460] 
+(Filename: C Line: 0)
+
+Clean up after player 1
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+NetworkManager:OnPlayerDisconnected(NetworkPlayer) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Managers\NetworkManager.js:48)
+ 
+(Filename: C Line: 0)
+
+Registered on Master Server
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+NetworkManager:OnMasterServerEvent(MasterServerEvent) (at C:\Users\Vladimir\Documents\UnityBomberman\Assets\korzh\Scripts\Managers\NetworkManager.js:70)
+ 
+(Filename: C Line: 0)
+
