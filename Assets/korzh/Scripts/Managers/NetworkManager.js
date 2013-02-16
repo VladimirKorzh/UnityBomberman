@@ -1,8 +1,8 @@
 #pragma strict
 
 var GameTypeName = "TestBomberMan";
-var ServerName = "Network Testing";
-var ServerComment = "Looks Cool";
+var ServerName = "AlphaTesting";
+var ServerComment = "RawGameplay";
 var ServerPassword = "";
 	
 var hostData: HostData[];
@@ -11,15 +11,11 @@ private var btnY:float;
 private var btnW:float;
 private var btnH:float;
 
-var OnlyOnce: boolean;
-
-
 function Start () {
 	btnX = Screen.width * 0.05;
 	btnY = Screen.width * 0.05;
 	btnW = Screen.width * 0.1;
 	btnH = Screen.width * 0.05;
-	OnlyOnce = false;
 }
 
 function startServer(){
@@ -32,17 +28,16 @@ function startServer(){
 // Events
 function OnServerInitialized(){
 	// Called on the server whenever a Network.InitializeServer was invoked and has completed.
-	Debug.Log("Server Initialized");
+	Debug.Log("Server Initialized. my playerID: " + Network.player);
+ 	GetComponent(LevelManager).CreateDebugLevel(); 	
+	GetComponent(LevelManager).spawnPlayer(Network.player);
+	
 }
 
-function OnPlayerConnected(){
+function OnPlayerConnected(player: NetworkPlayer){
 	// Called on the server whenever a new player has successfully connected.
-	Debug.Log("Player connected");
-	if (!OnlyOnce){
-		GetComponent(LevelManager).CreateDebugLevel();
-		GetComponent(LevelManager).spawnPlayer();
-		OnlyOnce = true;
-		}
+	Debug.Log("Player connected "+player.ToString());
+	GetComponent(LevelManager).networkView.RPC("spawnPlayer", player, player);
 }
 
 function OnPlayerDisconnected(player: NetworkPlayer) {
@@ -53,7 +48,7 @@ function OnPlayerDisconnected(player: NetworkPlayer) {
 
 function OnConnectedToServer(){
 	// Called on the client when you have successfully connected to a server
-	GetComponent(LevelManager).spawnPlayer();
+
 }
 
 function OnDisconnectedFromServer(){
@@ -68,12 +63,10 @@ function OnFailedToConnect(){
 function OnMasterServerEvent(mse:MasterServerEvent){
 	// Called on clients or servers when reporting events from the MasterServer.
 	if(mse == MasterServerEvent.RegistrationSucceeded){
-		Debug.Log("Registered on Master Server");		
+		Debug.Log("Registered on Master Server");	
 	}
 }
-
 
 function OnFailedToConnectToMasterServer(){
 	// Called on clients or servers when there is a problem connecting to the master server.
 }
-

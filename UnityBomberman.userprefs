@@ -9,9 +9,10 @@
               <Node name="korzh" expanded="True">
                 <Node name="Scripts" expanded="True">
                   <Node name="Behaviours" expanded="True">
-                    <Node name="PowerUpBehaviour.js" selected="True" />
-                  </Node>
+                    <Node name="PlayerBehaviour.js" selected="True" />
+					</Node>
                   <Node name="Managers" expanded="True" />
+                  <Node name="WorkInProgress" expanded="True" />
                 </Node>
               </Node>
             </Node>

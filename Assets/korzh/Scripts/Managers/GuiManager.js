@@ -26,12 +26,12 @@ function Start(){
 function MainMenuScreen(){
 	if (state != GUIState.MainMenu) GUI.Box(Rect(200,100, 500, 200),screenName);	
 	
-	if (GUI.Button(Rect(Screen.width/2,Screen.height/2,150,50), "Single Player Test")){
-		state = GUIState.PlayingMatch;
-		nm.startServer();
-		GetComponent(LevelManager).CreateDebugLevel();
-		GetComponent(LevelManager).spawnPlayer();
-	}	
+//	if (GUI.Button(Rect(Screen.width/2,Screen.height/2,150,50), "Single Player Test")){
+//		state = GUIState.PlayingMatch;
+//		nm.startServer();
+//		GetComponent(LevelManager).CreateDebugLevel();
+//		GetComponent(LevelManager).spawnPlayer(Network.player);
+//	}	
 	if (GUI.Button(Rect(25,100,150,50), "Create a new Game")){
 		state = GUIState.CreatingGame;
 	}

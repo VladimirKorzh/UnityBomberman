@@ -15,7 +15,6 @@ var Speed : float = 2.0f;
 var Bomb = 1;
 var canJump = false;
 
-var DeathSound : AudioClip;
 var PlacedBombsList = Array();	
 
 public enum BonusType { 
@@ -24,29 +23,29 @@ public enum BonusType {
 	Bomb  = 3
 }
 
-
+var sm : GameObject;
 var goBomb : GameObject;
-
 private var moveDirection : Vector3 = Vector3.zero;
 private var controller : CharacterController;
 
-var ExplosionSound : AudioClip;
-var ExplosionFlameParticleEffect : GameObject;
 
-var PickUpSounds : AudioClip[];
 
 
 function Start(){
 	if(networkView.isMine){ 
 		// set the camera to follow this object
 	    Camera.mainCamera.GetComponent(SmoothFollow).target = gameObject.transform;
-	    	
+	    Camera.mainCamera.transform.position.x = 7f;
+	    Camera.mainCamera.transform.position.y = 10.77f;
+	    Camera.mainCamera.transform.position.z = 5f;	    
+	    Camera.mainCamera.transform.LookAt(Vector3(7,1,5));
+
 	   	// create an abstract color difference between players
-	    gameObject.Find("Ice Golem").renderer.material.color = Color.white;
+
 	    controller = GetComponent(CharacterController);
-	    
+		sm = GameObject.Find("SceneManager");	    
     }
-    else {
+    else {    
     	enabled = false;
     }
 }
@@ -87,8 +86,6 @@ function PlaceBomb(){
 		}
 		
 	    var boom = Network.Instantiate(goBomb, newpos, Quaternion.identity,1);
-	    //testing
-	    networkView.RPC("PlaySoundEffectAtPos", RPCMode.All, "PickUpSound", transform.position);
 	    
 	    boom.GetComponent(BombBehaviour).LinkPlayer(gameObject);
 	    PlacedBombsList.Add( boom );	    
@@ -155,39 +152,13 @@ function UpdateAnimations(){
 function UpdateControls(){
 	if (Input.GetKeyDown(KeyCode.Escape)) Application.Quit();
 	if (Input.GetKeyDown(KeyCode.E) && !isDead)      PlaceBomb();
-	if (Input.GetKeyDown(KeyCode.Q))      isDead = false;
-
+	if (Input.GetKeyDown(KeyCode.Q)) { collider.enabled = true;     isDead = false; }
 }
 
 function Update(){
 	if (!isDead) UpdateMovement();
 	UpdateAnimations();
 	UpdateControls();
-}
-
-
-
-
-@RPC
-function SpawnAnimationAtPos(which:String, pos:Vector3){
-	switch(which){
-		case "Fire": 
-			var fire = Instantiate(ExplosionFlameParticleEffect, pos,Quaternion.identity);
-			Destroy(fire, 1);
-			break;
-	}
-}
-
-@RPC
-function PlaySoundEffectAtPos(which:String, pos:Vector3){
-	switch(which){
-		case "ExplosionSound": 
-			AudioSource.PlayClipAtPoint(ExplosionSound, pos);
-			break;
-		case "PickUpSound":
-			AudioSource.PlayClipAtPoint(PickUpSounds[Random.Range(0,PickUpSounds.Length)], pos);	
-			break;
-	}
 }
 
 @RPC
@@ -204,6 +175,19 @@ function PlayMovementAnimation(animationName : String){
 function Kill(){
 	isDead = true;
 	Debug.Log("Player died");
-	Camera.mainCamera.audio.Stop();
-	AudioSource.PlayClipAtPoint(DeathSound, transform.position);	
+//	Camera.mainCamera.audio.Stop();
+	sm.networkView.RPC("PlaySoundEffectAtPos", RPCMode.All, "PlayerDeathSound", transform.position);	
+	collider.enabled = false;
+}
+
+@RPC
+function Repaint(owner:NetworkPlayer){
+	var CharColors = new Color[4];
+	CharColors[0] = Color.white;
+	CharColors[1] = Color.red;
+	CharColors[2] = Color.green;
+	CharColors[3] = Color.black;
+
+    gameObject.GetComponentsInChildren(Renderer)[0].renderer.material.color = CharColors[parseInt(owner.ToString())];    
+
 }

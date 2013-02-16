@@ -50,10 +50,12 @@
      <Compile Include="Assets\korzh\Scripts\Behaviours\PlayerBehaviour.js" />
      <Compile Include="Assets\korzh\Scripts\Behaviours\PowerUpBehaviour.js" />
      <Compile Include="Assets\korzh\Scripts\Behaviours\WoodBlockBehaviour.js" />
+     <Compile Include="Assets\korzh\Scripts\Managers\EffectsManager.js" />
      <Compile Include="Assets\korzh\Scripts\Managers\GuiManager.js" />
      <Compile Include="Assets\korzh\Scripts\Managers\LevelManager.js" />
      <Compile Include="Assets\korzh\Scripts\Managers\NetworkManager.js" />
-     <Compile Include="Assets\korzh\Scripts\Miscelaneous\SmoothFollow.js" />
+     <Compile Include="Assets\korzh\Scripts\WorkInProgress\SmoothFollow.js" />
+     <Compile Include="Assets\korzh\Scripts\WorkInProgress\soundtest.js" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseEffectShaderRGB.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\SeparableWeightedBlurDof34.shader" />
