@@ -5,12 +5,14 @@ var LerpTimer = 0.0f;
 var Exploded = false;
 var TimeToExplosion = 2.0f;
 var TimeToImpassable = 0.5;
-var LinkedPlayer                 : GameObject;
+var LinkedPlayer : GameObject;
 
+private var em : EffectsManager;
 
 function Start(){
 	if (networkView.isMine) {
 		Debug.Log("I created bomb: " + networkView.viewID + " at: " + transform.position);	
+		em = LinkedPlayer.GetComponent(PlayerBehaviour).sm.GetComponent(EffectsManager);
 	}
 }
 
@@ -58,8 +60,8 @@ function Explode(dir : Vector3){
      		LinkedPlayer.GetComponent(PlayerBehaviour).PlacedBombsList.Remove( gameObject );
     		 		        	    
 			//explode self
-    		LinkedPlayer.networkView.RPC("SpawnAnimationAtPos", RPCMode.All, "Fire", transform.position);  
-    		LinkedPlayer.networkView.RPC("PlaySoundEffectAtPos", RPCMode.All, "ExplosionSound", transform.position);  
+    		em.networkView.RPC("SpawnAnimationAtPos", RPCMode.All, "Fire", transform.position);  
+    		em.networkView.RPC("PlaySoundEffectAtPos", RPCMode.All, "ExplosionSound", transform.position);  
 			
 			var selfCollision = Physics.OverlapSphere(transform.position,0.3,(1 << 9));
 			for (var i=0;i<selfCollision.Length;i++){
@@ -96,7 +98,7 @@ function ExplodeDir(dir : Vector3){
     	if (Physics.Linecast(transform.position, transform.position+dir*i,hit, (1 << 8))) {    
     		if (hit.collider.tag == "StoneBlock") break;
     		
-    		LinkedPlayer.networkView.RPC("SpawnAnimationAtPos", RPCMode.All, "Fire", transform.position+dir*i);   
+    		em.networkView.RPC("SpawnAnimationAtPos", RPCMode.All, "Fire", transform.position+dir*i);   
     			
 	  		if (hit.collider.tag == "WoodBlock") {
 			    hit.collider.gameObject.GetComponent(WoodBlockBehaviour).Explode();	 
@@ -122,7 +124,7 @@ function ExplodeDir(dir : Vector3){
     	}
     	else {
     		colliders = Physics.OverlapSphere(transform.position+dir*i,ExplosionSphereRadius, (1 << 9) ) ;
-    		LinkedPlayer.networkView.RPC("SpawnAnimationAtPos", RPCMode.All, "Fire", transform.position+dir*i);   
+    		em.networkView.RPC("SpawnAnimationAtPos", RPCMode.All, "Fire", transform.position+dir*i);   
     		
 			for (var j=0;j<colliders.Length;j++){				
 				if (colliders[j].collider.tag == "Player"){

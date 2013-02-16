@@ -1,8 +1,8 @@
 #pragma strict
 
 var GameTypeName = "TestBomberMan";
-var ServerName = "Network Testing";
-var ServerComment = "Looks Cool";
+var ServerName = "AlphaTesting";
+var ServerComment = "RawGameplay";
 var ServerPassword = "";
 	
 var hostData: HostData[];
@@ -29,19 +29,15 @@ function startServer(){
 function OnServerInitialized(){
 	// Called on the server whenever a Network.InitializeServer was invoked and has completed.
 	Debug.Log("Server Initialized. my playerID: " + Network.player);
- 	GetComponent(LevelManager).CreateDebugLevel();
- 	
- 	var spawnPos = GetComponent(LevelManager).SpawnPos[parseInt(Network.player.ToString())];
- 	SpawnYourself(spawnPos);
-	Debug.Log("Level Created");			
+ 	GetComponent(LevelManager).CreateDebugLevel(); 	
+	GetComponent(LevelManager).spawnPlayer(Network.player);
+	
 }
 
 function OnPlayerConnected(player: NetworkPlayer){
 	// Called on the server whenever a new player has successfully connected.
 	Debug.Log("Player connected "+player.ToString());
-	
-	var spawnPos = GetComponent(LevelManager).SpawnPos[parseInt(player.ToString())];	
-	networkView.RPC("SpawnYourself", player, spawnPos);
+	GetComponent(LevelManager).networkView.RPC("spawnPlayer", player, player);
 }
 
 function OnPlayerDisconnected(player: NetworkPlayer) {
@@ -71,13 +67,6 @@ function OnMasterServerEvent(mse:MasterServerEvent){
 	}
 }
 
-
 function OnFailedToConnectToMasterServer(){
 	// Called on clients or servers when there is a problem connecting to the master server.
-}
-
-@RPC
-function SpawnYourself(pos: Vector3){
-	GetComponent(LevelManager).spawnPlayer(pos);
-	
 }

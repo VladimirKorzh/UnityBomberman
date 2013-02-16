@@ -76,21 +76,6 @@ function MapInstantiate(){
 	}
 }
 
-function CreateDebugLevel () {
-
-	CreateEmptyMap(15,2,11);
-	CreateCascade();	
-	CreateStandardGrid();
-	
-	CreateSpawnPos(Vector3(Xnum-2,1,Znum-2));
-	CreateSpawnPos(Vector3(Xnum-2,1,1));
-	CreateSpawnPos(Vector3(1,1,Znum-2));
-	CreateSpawnPos(Vector3(1,1,1));		
-				
-	MapInstantiate();
-			
-}
-
 function CreateSpawnPos(pos: Vector3){
 	SpawnPos.Add(pos);
 	if (map[pos.x,pos.y,pos.z]   != Cell.Stone) map[pos.x,pos.y,pos.z] 		 = Cell.Empty;	
@@ -104,7 +89,24 @@ function CreateSpawnPos(pos: Vector3){
 		if (map[pos.x-1,pos.y,pos.z] != Cell.Stone) map[pos.x-1,pos.y,pos.z] = Cell.Empty;		
 }
 
+function CreateDebugLevel () {
 
-function spawnPlayer(pos:Vector3){
-	Network.Instantiate(playerPrefab, pos, Quaternion.identity,0).networkView.RPC("Repaint", RPCMode.AllBuffered, Network.player);
+	CreateEmptyMap(15,2,11);
+	CreateCascade();	
+	CreateStandardGrid();
+	
+	CreateSpawnPos(Vector3(Xnum-2,1,Znum-2));
+	CreateSpawnPos(Vector3(Xnum-2,1,1));
+	CreateSpawnPos(Vector3(1,1,Znum-2));
+	CreateSpawnPos(Vector3(1,1,1));		
+				
+	MapInstantiate();
+	Debug.Log("DebugLevel created");
+}
+
+@RPC
+function spawnPlayer(player: NetworkPlayer){
+	var spawnPos = SpawnPos[parseInt(player.ToString())];
+	Network.Instantiate(playerPrefab, spawnPos, Quaternion.identity,0).networkView.RPC("Repaint", RPCMode.AllBuffered, player);
+	Debug.Log("Player spawned");	
 }

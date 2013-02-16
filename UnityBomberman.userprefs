@@ -4,13 +4,6 @@
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
-          <Node name="Assembly-CSharp-firstpass" expanded="True">
-            <Node name="Assets" expanded="True">
-              <Node name="Standard Assets" expanded="True">
-                <Node name="Image Effects (Pro Only)" expanded="True" />
-              </Node>
-            </Node>
-          </Node>
           <Node name="Assembly-UnityScript" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="korzh" expanded="True">
@@ -19,6 +12,7 @@
                     <Node name="PlayerBehaviour.js" selected="True" />
                   </Node>
                   <Node name="Managers" expanded="True" />
+                  <Node name="WorkInProgress" expanded="True" />
                 </Node>
               </Node>
             </Node>

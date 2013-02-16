@@ -15,7 +15,6 @@ var Speed : float = 2.0f;
 var Bomb = 1;
 var canJump = false;
 
-var DeathSound : AudioClip;
 var PlacedBombsList = Array();	
 
 public enum BonusType { 
@@ -24,16 +23,12 @@ public enum BonusType {
 	Bomb  = 3
 }
 
-
+var sm : GameObject;
 var goBomb : GameObject;
-
 private var moveDirection : Vector3 = Vector3.zero;
 private var controller : CharacterController;
 
-var ExplosionSound : AudioClip;
-var ExplosionFlameParticleEffect : GameObject;
 
-var PickUpSounds : AudioClip[];
 
 
 function Start(){
@@ -48,7 +43,7 @@ function Start(){
 	   	// create an abstract color difference between players
 
 	    controller = GetComponent(CharacterController);
-	    
+		sm = GameObject.Find("SceneManager");	    
     }
     else {    
     	enabled = false;
@@ -91,8 +86,6 @@ function PlaceBomb(){
 		}
 		
 	    var boom = Network.Instantiate(goBomb, newpos, Quaternion.identity,1);
-	    //testing
-	    networkView.RPC("PlaySoundEffectAtPos", RPCMode.All, "PickUpSound", transform.position);
 	    
 	    boom.GetComponent(BombBehaviour).LinkPlayer(gameObject);
 	    PlacedBombsList.Add( boom );	    
@@ -115,9 +108,9 @@ function UpdateMovement() {
         
         moveDirection *= Speed;
         
-//        if (Input.GetButton ("Jump")) {
-//            moveDirection.y = jumpSpeed;
-//        }
+        if (Input.GetButton ("Jump")) {
+            moveDirection.y = jumpSpeed;
+        }
     }
 
     // Apply gravity
@@ -168,31 +161,6 @@ function Update(){
 	UpdateControls();
 }
 
-
-
-
-@RPC
-function SpawnAnimationAtPos(which:String, pos:Vector3){
-	switch(which){
-		case "Fire": 
-			var fire = Instantiate(ExplosionFlameParticleEffect, pos,Quaternion.identity);
-			Destroy(fire, 1);
-			break;
-	}
-}
-
-@RPC
-function PlaySoundEffectAtPos(which:String, pos:Vector3){
-	switch(which){
-		case "ExplosionSound": 
-			AudioSource.PlayClipAtPoint(ExplosionSound, pos);
-			break;
-		case "PickUpSound":
-			AudioSource.PlayClipAtPoint(PickUpSounds[Random.Range(0,PickUpSounds.Length)], pos);	
-			break;
-	}
-}
-
 @RPC
 function PlayMovementAnimation(animationName : String){
 	animation.CrossFade(animationName);
@@ -207,8 +175,8 @@ function PlayMovementAnimation(animationName : String){
 function Kill(){
 	isDead = true;
 	Debug.Log("Player died");
-	Camera.mainCamera.audio.Stop();
-	AudioSource.PlayClipAtPoint(DeathSound, transform.position);	
+//	Camera.mainCamera.audio.Stop();
+	sm.networkView.RPC("PlaySoundEffectAtPos", RPCMode.All, "PlayerDeathSound", transform.position);	
 	collider.enabled = false;
 }
 

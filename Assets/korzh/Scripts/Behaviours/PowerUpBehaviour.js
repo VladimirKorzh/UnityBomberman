@@ -36,7 +36,7 @@ function OnTriggerEnter (other : Collider) {
 			case BonusType.Fire:   other.GetComponent(PlayerBehaviour).PickUpBonus(2); break;
 			case BonusType.Bomb:   other.GetComponent(PlayerBehaviour).PickUpBonus(3); break;
 		}
-		other.networkView.RPC("PlaySoundEffectAtPos", RPCMode.All, "PickUpSound", transform.position);
+		other.GetComponent(PlayerBehaviour).sm.GetComponent(EffectsManager).networkView.RPC("PlaySoundEffectAtPos", RPCMode.All, "PickUpSound", transform.position);
 		if (networkView.isMine) Network.Destroy(gameObject);
 		Debug.Log("powerup picked up: " + networkView.viewID + " type: " + Type);
 	}
